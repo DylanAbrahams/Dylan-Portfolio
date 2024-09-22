@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Abrahams - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/56e1a6ce74.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="img/DylanLogo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">Over Mij</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projecten</a>
+            <!-- <ul class="dropdown">
+              <li><a href="#project1">Project 1</a></li>
+              <li><a href="#project2">Project 2</a></li>
+              <li><a href="#project3">Project 3</a></li>
+            </ul> -->
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Creative Webdesigner</p>
+        <h1>Hoi, ik ben <br><span>Dylan</span> Abrahams</h1>
+        <p>Student CMD (Commication & Multimedia Design) op Hogeschool van Amsterdam</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="img/DylanFoto2.jpg" alt="Foto van Dylan">
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">Over Mij</h2>
+          <p>Als CMD student maak ik digitale producten die goed aansluiten bij de behoefte van gebruikers. Ik ben UX en
+            UI Designer en </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('ervaring')">Ervaring</p>
+              <p class="tab-links" onclick="opentab('onderwijs')">Onderwijs</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web app development</li>
+                <li><span>App Development</span><br>Building Andrioid/iOS apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="ervaring">
+              <ul>
+                <li><span>Heden</span><br>Ik heb nog geen ervaring bij bedrijven</li>
+
+              </ul>
+            </div>
+            <div class="tab-contents" id="onderwijs">
+              <ul>
+                <li><span>2022 - Heden</span><br>Communication & Multimedia Design op Hogeschool van Amsterdam</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------services------------- -->
+  <div id="services">
+    <div class="container">
+      <h2 class="sub-title">Mijn Services</h2>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Text hier</p>
+          <a href="#">Meer weten</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>Text hier</p>
+          <a href="#">Meer weten</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Design</h2>
+          <p>Text hier</p>
+          <a href="#">Meer weten</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------portfolio------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h2 class="sub-title">Mijn Werk</h2>
+      <div class="work-list">
+        <div class="work">
+          <img src="img/MarioGame1.png">
+          <div class="layer">
+            <h3>Mario Sidescroller</h3>
+            <p>Text hier</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/MarioGame2.png">
+          <div class="layer">
+            <h3>Tainted Return</h3>
+            <p>Text hier</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/MarioGame3.png">
+          <div class="layer">
+            <h3>Responsive Website</h3>
+            <p>Text hier</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">Meer zien</a>
+    </div>
+  </div>
+
+<!-- ---------------contact-------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h2 class="sub-title">Contact</h2>
+          <p><i class="fa-solid fa-paper-plane"></i>dylan@abrahams.nl</p>
+          <p><i class="fa-solid fa-square-phone"></i>0628226501</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="img/DylanFoto.jpg" download class="btn btn2">Download CV</a>
+          <!-- VERANDER DE DOWNLOAD NAAR DE CV, HIJ STAAT NOG OP EEN RANDOM FOTO -->
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Uw Naam" required>
+          <input type="email" name="email" placeholder="Uw Email" required>
+          <textarea name="Message" rows="6" placeholder="Uw Bericht"></textarea>
+          <button type="submit" class="btn btn2">Verzenden</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p></p>
+  </div>
+</div>
+
+
+
+  <!-- <h3>Projecten</h3>
+    <div class="image-group">
+      <a href="#project1">
+        <img src="img/MarioGame1.png" alt="Project 1">
+        <p>Mario Sidescroller Game</p>
+      </a>
+
+      <a href="#project2">
+        <img src="img/MarioGame1.png" alt="Project 2">
+        <p>Tainted Return</p>
+      </a>
+
+      <a href="#project3">
+        <img src="img/MarioGame1.png" alt="Project 3">
+        <p>Responsive Website</p>
+      </a>
+    </div> -->
+
+
+
+
+  <section id="portfolioo">
+    <h2>Projecten</h2>
+    <div class="project">
+      <h3 id="project1">Project 1: Mario Sidescroller Game</h3>
+      <h4>Details:</h4>
+      <ul>
+        <li><strong>Toegepaste skills:</strong> HTML, CSS, <strong>JavaScript</strong>, Adobe XD</li>
+        <li><strong>Datum:</strong> 23 april 2023</li>
+        <li><strong>Duur:</strong> 5 weken</li> </ul> <img src="mario_game_screenshot.png"
+            alt="Mario Sidescroller Game Screenshot">
+            <p>De opdracht was om een interactief spel te maken door gebruik te maken van HTML, CSS en JavaScript.
+              Dit is de eerste keer in de opleiding dat we gebruik maken van JavaScript. Voordat we zijn begonnen
+              moesten we een idee of spel uitkiezen die we (na)wilden maken en ik heb gekozen voor een sidescroller
+              (Mario Bros). In het spel is het de bedoeling om van punt A naar punt B te komen met allemaal obstakels
+              die je moet doorstaan, waaronder vijanden en valkuilen.</p>
+            <p> Ik heb in de HTML een canvas neergezet en met CSS deze in het midden gezet en een achtergrond gegeven.
+              Alle overige code is JavaScript. Alle assets zijn png's die ik gemaakt heb met Adobe XD. Deze zijn
+              allemaal gebaseerd op de sprites uit Super Mario Bros. Voor alle assets heb ik een JavaScript in een
+              variabele aangemaakt. Elk variabel zit een class. In de class zitten gegevens van de assets en deze
+              worden opgeroepen door de draw() functie of de update() functie. De update() functie is voor variabelen
+              die blijven bewegen op het scherm (bv. de vijanden). Deze functies worden opgeroepen met de animate()
+              functie onderin de code. Hieronder een beschrijving van alle variablen in de code.</p>
+
+            <p> Om te beginnen, de speler: Ik heb de speler (Mario) geprogrammeerd om altijd beinvloed te worden
+              door zwaartekracht. Als de speler in de lucht is, valt hij naar beneden totdat hij/zij op een platform
+              terecht komt. Mario kan worden bestuurd met WASD, A voor links, D voor rechts en W voor springen. Als
+              de speler voorbij een bepaalde x-waarde is dan scrollt het scherm mee. Alle andere assets gaan dan
+              naar links waardoor het lijkt dat de speler naar rechts loopt. Als Mario in een valkuil valt of
+              geraakt wordt door een vijand dan wordt het spel gereset. Wat nog meer uniek is aan de speler is dat
+              hij 2 sprites heeft: Naar links kijken en naar rechts kijken. Dit wordt ook bepaald met de knoppen A
+              en D.</p>
+            <p>De vijanden: Ik heb 3 verschillende vijanden gemaakt. De goomba, de bullet bill en de pirahna plant.
+              De goomba en de bullet bill zijn op dezelde manier geprogrammeerd. Ze verplaatsen altijd naar links, als
+              ze de speler van links of rechts aanraken dan reset het spel en wanneer de speler bovenop hun springt
+              dan verdwijnen ze en krijgt de speler een boost naar boven. De pirahna plant is geprogrammeerd om steeds
+              naar boven en naar beneden te gaan. Als de plant boven een bepaalde hoogte is gaat hij naar beneden en
+              andersom. Als de speler in contact komt met de plant dan reset het spel.</p>
+            <p>De platforms: Alle platforms zijn geprogrameerd om de speler tegen te houden als hij/zij er bovenop
+              springt. Als de speler op een platform landt dan wordt de Y-velocity op 0 gezet. Bijna alle platforms
+              zijn hetzelfde met het enige verschil de grootte. Het enige uitzondering is de "Moving Platform" die
+              naar links en rechts beweegt.</p>
+            <p>Voor- en achtergrond: De achtergrond scrollt langzamer mee dan de voorgrond. Dat is te zien aan de
+              wolken. Dit geeft een diepte gevoel aan het spel. De voorgrond zijn de assets die voor de speler komen
+              te staan. Deze worden als laatste in de animate() functie geladen, waaronder het kasteel, en de warp
+              pipes van level 2.
+            </p>
+
+            <a href="https://dylanabrahams.github.io/Dylan-MarioSidescroller/">Speel prototype</a>
+            <p> Eigen reflectie: Ik ben trots op wat ik heb gemaakt in zo'n korte tijd. Ik had hiervoor nog nooit
+              JavaScript
+              gebruikt, maar had wel snel de smaak te pakken. Achteraf had ik zeker nog nieuwe
+              dingen toe kunnen voegen en bepaalde bugs eruit kunnen halen. De goombas worden niet beinvloed door
+              zwaartekracht omdat ze anders door de platforms heen zouden vallen. Er is geen checkpoint systeem. Het
+              2e level heeft niet echt een einde. Dit zijn dingen die achteraf wel op te lossen waren. </p>
+            <p> Voor dit project ben ik genomineerd voor de <a
+                href="https://cmd-amsterdam.nl/portfolio/mario-sidescroller-game/" class="golden-dot">Golden Dot
+                Awards 2023</a>
+            </p>
+    </div>
+    <div class="project">
+      <h3 id="project2">Project 2: Tainted Return</h3>
+      <h4>Details:</h4>
+      <ul>
+        <li><strong>Toegepaste skills:</strong> HTML, CSS, <strong>JavaScript</strong>, Adobe XD, Adobe Illustrator
+        </li>
+        <li><strong>Datum:</strong> 12 juni 2023</li>
+        <li><strong>Duur:</strong> 3 weken</li> </ul> <p>Dit project was het Passieproject waar je een product kon
+            maken naar eigen voorkeur. Ik heb ervoor gekozen om
+            verder te gaan met sidescrollers in JavaScript. Dit project was in een team van 3. Ons team bestond uit 2
+            programmeurs (waaronder mezelf) en 1 artiest. Verder hebben we allemaal meegeholpen met het concept en
+            verhaal. De assets zijn gemaakt met Adobe Illustrator met behulp van een tekentablet.
+            </p>
+            <p>De bedoeling van het project was om de wereld iets beter te maken met behulp van je project. Denk aan
+              mensen
+              activeren/informeren over milieu, inclusiviteit, armoede etc. Wij hebben gekozen voor milieu en plastic.
+            </p>
+            <ul>
+              <p>
+                Verhaal: Het verhaalt speelt af op aarde in 2258. De hele wereld is vernietigd. Alles is verlaten en
+                er zijn
+                gemuteerde vijanden gebaseerd op plastic. Onze hoofdpersonage is een astronaut die al een lange tijd
+                weg is
+                geweest van aarde. Nu dat iedereen op aarde is gestorven heeft hij de opdracht gekregen om onderzoek
+                te doen
+                naar de planeet. Tijdens het spel komt er ook dialoog in beeld als de speler bepaalde items gevonden
+                heeft.
+              </p>
+              <p>
+                De speler: Onze astronaut, in ons verhaal wordt hij 'Leutenant' genoemd, wordt bestuurd met WASD. A
+                voor
+                links lopen, D voor rechts lopen en W voor springen. Verder heeft hij een zwaard en kan hij slaan met
+                F.
+                Linksbovenin is een health bar en een mana bar. De health bar gaat omlaag als de speler geraakt wordt
+                door
+                een vijand. De mana bar wordt gebruikt door het zwaard. Als je mana hebt, dan schiet het zwaard een
+                projectiel. Er liggen potions rondom het level om health en mana te herstellen.
+              </p>
+              <p>
+                De vijanden: Er zijn 2 vijanden. Deze zijn allebei gebaseerd op het plastic probleem. De eerste is een
+                gemuteerde rat 2 hoofden gebaseerd op plastic afval. Deze is geprogrameerd om naar links en rechts te
+                lopen.
+                Als de speler in contact komt met de rat neemt hij 20% schade. Als 2e enemy hebben we de plastic soep.
+                Deze
+                kan projectielen schieten die 50% schade doen naar de speler. Verder is de wereld gevuld met spike
+                planten
+                die de speler afmaken als hij er tegenaan loopt.
+              </p>
+              <p>
+                Collectibles: Er liggen tandwielen rondom het level. Er zijn in totaal 30 in het spel. Dit geeft de
+                speler een extra opdracht naast het halen van het einde. Zorg voor een zo goed mogelijke score.
+              </p>
+              <p>
+                Animaties: Er zijn animaties toegevoegd door middel van spritesheets. De speler heeft 3 verschillende
+                spritesheets: Stilstaan, rennen en zwaard gebruiken. Verder hebben de tandwielen een spin animatie, de
+                ratten hebben een loop animatie en de plastic soep heeft een schiet animatie.
+              </p>
+              <p>
+                Muziek en SFX: Er is een dramatische achtergrond muziek toegevoegd om een sfeer te geven aan het spel.
+                Verder zijn er sound effects voor de speler, het zwaard, de enemies, de collectibles en meer.
+              </p>
+              <p>
+                Einde: Aan het einde van het level komt er een silhouette van achter die op de speler afloopt. Wanneer
+                de speler wordt geraakt komt er een eindscherm met de eindscores en een message van het spel.
+              </p>
+              <a href="https://dylanabrahams.github.io/Dylan-TaintedReturn/">Speel prototype</a>
+              <p> Eigen reflectie: Ik ben heel blij met het eindresultaat. Het spel is heel mooi geworden. Vooral de
+                animaties en het zwaard zijn onderdelen waar ik zelf heel trots op ben. Wat wel beter had gekund is de
+                leveldesign. We hebben een mooi level gemaakt, maar je kon er niet makkelijk een platformer mee maken,
+                want er waren geen valkuilen. Daarom hebben we besloten om spike plants overal toe te voegen en
+                brick platforms erbij te doen. De spikeplants waren helaas een beetje gebugd: de hitbox was groter dan
+                het lijkt, waardoor de speler dood zou gaan zonder de plant echt aan te raken.</p>
+            </ul>
+    </div>
+    <div class="project">
+      <h3 id="project3">Project 3: Responsive Website</h3>
+      <ul>
+        <li><strong>Toegepaste skills:</strong> HTML, <strong>CSS</strong>, JavaScript</li>
+        <li><strong>Datum:</strong> 4 september 2023</li>
+        <li><strong>Duur:</strong> 5 weken</li> </ul> <p>Voor dit project moesten we zelf een website uitkiezen en
+            deze met HTML, CSS en JavaScript na te maken. Ik
+            heb zelf gekozen voor <a href="https://rightourstory.com">rightourstory.com</a>. We moesten de website
+            responsive maken dmv media queries en we moesten 2 pagina's namaken. Ik heb de home pagina en de 'Bullied
+            Button' pagina nagemaakt.
+            </p>
+            <p>Responsive: Ik heb de nav bar responsive gemaakt door deze op mobiel achter een hamburgermenu te
+              verstoppen. Als er op het hamburgermenu icoontje wordt gedrukt, dan komt de navigatie bar in beeld. Op
+              desktop is deze in de header te zien. Verder wordt de grootte van de tekst kleiner op mobiel.
+            </p>
+            <p>Flexbox: De website is ingedeeld met flexbox. Hiermee wordt bepaald of elementen naast of onder elkaar
+              komen te staan. Alles in de header staat bijvoorbeeld naast elkaar. Op mobiel staan alle teksten en
+              afbeeldingen onder elkaar. Op desktop is er meer plek, dus zijn er elementen naast elkaar. Dit wordt
+              bepaald met flexbox.</p>
+            <p>2e pagina: De bullied button pagina heeft een eigen CSS bestand. Hierin wordt een andere achtergrond
+              geladen worden alle CSS functies exclusief voor deze pagina opgeslagen. Deze pagina heeft ook een kleine
+              animatie op de bullied knop. Ik heb een knop toegevoegd om deze animatie aan en uit te zetten.</p>
+            <p>Overige CSS: Bij deze opdracht was het niet toegestaan om gebruik te maken van classes en divs. Alle
+              elementen zijn in CSS geselecteerd met 'sections' en 'nth-of-types'. Verder zijn er gebruik gemaakt van
+              custom properties en online fonts.
+              <a href="https://dylanabrahams.github.io/Dylan-FED/">Bekijk website</a>
+              <p>
+                Eigen reflectie: Ik vond dit een leuk project om te doen. Het was heel erg leerzaam en ik kan na dit
+                vak gedaan te hebben een stuk beter overweg met HTML, CSS en JS. Een punt voor verbetering is wel de
+                responsiviteit. Achteraf had ik meer media queries erin gezet om meer verschillende schermgroottes
+                goed te laten werken met de letter- en afbeeldinggroottes.
+              </p>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz_zfeIwCyut0S-qJwLCI9ZfHApR0ktYvqnX8hkI9k/dev'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
