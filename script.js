@@ -26,12 +26,27 @@ function closemenu(){
 }
 
 
-// const scriptURL = '<https://script.google.com/macros/s/AKfycbw9atLtpI9UyMqhcCQBt-XzQUlXEvlzyrf5LX-XcY-KfijujNqLhvfw8R2gYn24_exq/exec>'
-// const form = document.forms['submit-to-google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzNmr1dXWOdkDfzBuWfHns1gCuz_ez60TRqW00OINC_KEWjoiScWBfQjEOujb_LQpF2/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
 
-// form.addEventListener('submit', e => {
-//   e.preventDefault()
-//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//     .then(response => console.log('Success!', response))
-//     .catch(error => console.error('Error!', error.message))
-// })
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(response => {
+    msg.innerHTML = "Bericht succesvol verzonden!";
+    msg.style.color = "green"; // Succesmelding in groene tekst
+    setTimeout(() => {
+      msg.innerHTML = ""; // Wis bericht na een paar seconden
+    }, 5000);
+    form.reset(); // Reset het formulier na succes
+  })
+  .catch(error => {
+    msg.innerHTML = "Er is iets misgegaan, probeer het later opnieuw!";
+    msg.style.color = "red"; // Foutmelding in rode tekst
+    console.error('Error!', error.message);
+  });
+});
