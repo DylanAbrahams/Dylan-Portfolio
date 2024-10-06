@@ -1,11 +1,28 @@
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--active-color: #ff004f;
+  --about-text-color: #ababab;
+  --background-color: #080808;
+  --tab-background: #262626;
+  --text-color: white;
+  --black-screen: black;
+  --about-tabs: #b54769;
+  --msg-success:#61b752;
+}
+
+
+
 /* Basisstijlen voor alle schermgroottes */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #080808; 
-  color: #fff; 
+  background-color: var(--background-color); 
+  color: var(--text-color); 
 }
 html{
   scroll-behavior: smooth;
@@ -20,7 +37,15 @@ ul {
 #header {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: var(--black-screen);
+  background-size: cover;
+  background-position: center;
+}
+
+#header-short {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--black-screen);
   background-size: cover;
   background-position: center;
 }
@@ -50,7 +75,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   font-size: 18px;
   position: relative;
 }
@@ -59,7 +84,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: var(--active-color);
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -81,38 +106,14 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span{
-  color: #ff004f;
+  color: var(--active-color);
 }
-
-/* nav ul li ul.dropdown {
-  display: none; 
-  position: absolute;
-  background-color: #272727; 
-  border-radius: 0;
-  padding-right: 1em;
-  width:fit-content;
-}
-
-nav ul li:hover ul.dropdown {
-  display: block;
-}
-
-nav ul li ul.dropdown li {
-  font-size:1em;
-  display: block;
-  padding:0;
-  margin:0;
-  padding: 0.3em 0;
-} */
-
-
-
 
 
 /* --------------about------------ */
 #about{
   padding: 80px 0;
-  color: #ababab;
+  color: var(--about-text-color);
 }
 
 .row {
@@ -137,7 +138,7 @@ nav ul li ul.dropdown li {
 .sub-title {
   font-size: 60px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .tab-titles{ 
@@ -156,7 +157,7 @@ nav ul li ul.dropdown li {
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: var(--active-color);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -171,7 +172,7 @@ nav ul li ul.dropdown li {
   margin: 10px 0;
 }
 .tab-contents ul li span{
-  color: #b54769;
+  color: var(--about-tabs);
   font-size: 14px;
 }
 .tab-contents{
@@ -192,7 +193,7 @@ nav ul li ul.dropdown li {
   margin-top: 50px;
 }
 .services-list div{
-  background: #262626;
+  background: var(--tab-background);
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -210,13 +211,13 @@ nav ul li ul.dropdown li {
 }
 .services-list div a{
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
 }
 .services-list div:hover{
-  background: #ff004f;
+  background: var(--active-color);
   transform: translateY(-10px);
 }
 
@@ -244,7 +245,7 @@ nav ul li ul.dropdown li {
 .layer{
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+  background: linear-gradient(rgba(0,0,0,0.6), var(--active-color));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -266,11 +267,11 @@ nav ul li ul.dropdown li {
 }
 .layer a{
   margin-top: 20px;
-  color: #ff004f;
+  color: var(--active-color);
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  background: #fff;
+  background: var(--text-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -286,15 +287,15 @@ nav ul li ul.dropdown li {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
+  border: 1px solid var(--active-color);
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   transition: background 0.5s;
 }
 .btn:hover{
-  background: #ff004f;
+  background: var(--active-color);
 }
 
 /* ------------contact-------------- */
@@ -308,7 +309,7 @@ nav ul li ul.dropdown li {
   margin-top:30px;
 }
 .contact-left p i{
-  color: #ff004f;
+  color: var(--active-color);
   margin-right: 15px;
   font-size: 25px;
 }
@@ -319,17 +320,17 @@ nav ul li ul.dropdown li {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #ababab;
+  color: var(--about-text-color);
   display: inline-block;
   transition: transform 0.5s;
 }
 .social-icons a:hover{
-  color: #ff004f;
+  color: var(--active-color);
   transform: translateY(-5px)
 }
 .btn.btn2{
   display: inline-block;
-  background: #ff004f;
+  background: var(--active-color);
 }
 .contact-right form{
   width: 100%;
@@ -338,10 +339,10 @@ form input, form textarea{
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;
+  background: var(--tab-background);
   padding: 15px ;
   margin: 15px 0;
-  color: #fff;
+  color: var(--text-color);
   font-size: 18px;
   border-radius: 6px;
 }
@@ -355,7 +356,7 @@ form .btn2{
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: #262626;
+  background: var(--tab-background);
   font-weight: 300;
   margin-top: 20px;
 }
@@ -381,7 +382,7 @@ nav .fas{
       font-size: 25px;
     }
     nav ul{
-      background: #ff004f;
+      background: var(--active-color);
       position: fixed;
       top:0;
       right:-200px;
@@ -425,91 +426,18 @@ nav .fas{
     }
 }
 #msg{
-  color: #61b752;
+  color: var(--msg-success);
   margin-top: -40px;
   display:block;
 }
 
-
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #444; 
-  border-radius: 5px;
+/* ------------------portfolio pagina-------------- */
+.title-area{
+  width:100%;
 }
-
-section h2 {
-  color: #fff; 
+.portfolio-col-1{
+  flex-basis: 60%;
 }
-
-section p {
-  color: #ccc; /* Lichtgrijze tekst voor de sectieparagrafen */
-}
-
-/* De 3 projectfotos op de home */
-.image-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Ruimte tussen afbeeldingen */
-}
-.image-group a {
-  text-align: center;
-  text-decoration: none;
-  color: #333; /* Kleur van de tekst */
-  display: block; /* Zorgt ervoor dat de link de grootte van de afbeelding aanneemt */
-}
-.image-group img {
-  max-width: 30%; /* Zorg ervoor dat afbeeldingen niet breder zijn dan hun container */
-  height: auto;
-}
-
-/* Stijlen voor projecten */
-.project {
-  margin-bottom: 30px;
-}
-
-.project h3 {
-  font-size: 24px;
-  color: #fff; /* Witte tekst voor de projectkoppen */
-  margin-bottom: 10px;
-}
-
-.project p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ccc; /* Lichtgrijze tekst voor de projecttekst */
-  margin-bottom: 15px;
-}
-
-.project img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.project a {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 5px 10px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.project a.golden-dot {
-  color: yellow;
-  text-decoration: underline;
-  padding:0;
-  background-color:transparent;
-  border-radius:0;
-  transition:none;
-}
-
-.project a:hover {
-  background-color: #0056b3;
-}
-
-.project a.golden-dot:hover {
-  background-color: transparent;
+.portfolio-col-2 {
+  flex-basis: 35%;
 }

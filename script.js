@@ -26,6 +26,8 @@ function closemenu(){
 }
 
 
+// CONTACT PAGINA
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzNmr1dXWOdkDfzBuWfHns1gCuz_ez60TRqW00OINC_KEWjoiScWBfQjEOujb_LQpF2/exec';
 const form = document.forms['submit-to-google-sheet'];
 const msg = document.getElementById("msg");
@@ -34,15 +36,25 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     fetch(scriptURL, {
         method: 'POST',
+        mode: 'no-cors',  // Voeg deze regel toe om CORS te vermijden
         body: new FormData(form)
     })
-    .then(response => {
+    .then(() => {
+        // Bericht dat het formulier succesvol is verzonden
         msg.innerHTML = "Bericht verzonden!";
-        console.log('Success!', response);
+        setTimeout(function(){
+            msg.innerHTML = " ";
+        }, 5000);
+        form.reset();  // Reset het formulier na verzending
+        console.log('Success!');
     })
-    .catch(error => {
+    .catch(() => {
+        // Foutbericht als er iets misgaat
         msg.innerHTML = "Er is iets misgegaan, probeer het later opnieuw!";
-        console.error('Error!', error.message);
+        setTimeout(function(){
+            msg.innerHTML = " ";
+        }, 5000);
+        form.reset();  // Reset het formulier zelfs bij foutmelding
+        console.error('Error!');
     });
 });
-
