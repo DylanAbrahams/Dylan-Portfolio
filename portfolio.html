@@ -29,32 +29,47 @@
 
   <!-- -------------project 1----------- -->
   <div id="project1">
-    <div class="container">
+    <div class="portfolio-container">
       <div class="row">
         <div class="title-area">
           <h2 class="sub-title">Mario Sidescroller</h2>
+          <h3>Details:</h3>
+          <ul>
+            <li><span>Toegepaste skills: </span>JavaScript, HTML, CSS, Adobe XD</li>
+            <li><span>Datum: </span>23 april 2023</li>
+            <li><span>Duur: </span>5 weken</li>
+            <li><span>Uitvoering: </span>Individueel</li>
+          </ul>
+          <img src="img/MarioGame2.png" alt="Mario Sidescroller Game Screenshot">
         </div>
-        <div class="portfolio-col-1">
-          <h3>Details:</h4>
-            <ul>
-              <li><strong>Toegepaste skills:</strong> HTML, CSS, <strong>JavaScript</strong>, Adobe XD</li>
-              <li><strong>Datum:</strong> 23 april 2023</li>
-              <li><strong>Duur:</strong> 5 weken</li>
-            </ul> <img src="" alt="Mario Sidescroller Game Screenshot">
-            <p>De opdracht was om een interactief spel te maken door gebruik te maken van HTML, CSS en JavaScript.
-              Dit is de eerste keer in de opleiding dat we gebruik maken van JavaScript. Voordat we zijn begonnen
-              moesten we een idee of spel uitkiezen die we (na)wilden maken en ik heb gekozen voor een sidescroller
-              (Mario Bros). In het spel is het de bedoeling om van punt A naar punt B te komen met allemaal obstakels
-              die je moet doorstaan, waaronder vijanden en valkuilen.</p>
+        <div class="portfolio-col">
+          <h3>De opdracht</h3>
+          <p>De opdracht was om een interactief spel te maken door gebruik te maken van HTML, CSS en JavaScript.
+            Dit is de eerste keer in de opleiding dat we gebruik maken van JavaScript. Voordat we zijn begonnen
+            moesten we een idee of spel uitkiezen die we (na)wilden maken en ik heb gekozen voor een sidescroller
+            (Mario Bros). In het spel is het de bedoeling om van punt A naar punt B te komen met allemaal obstakels
+            die je moet doorstaan, waaronder vijanden en valkuilen.</p>
+          <h3>De uitvoering</h3>
+          <div class="content">
             <p> Ik heb in de HTML een canvas neergezet en met CSS deze in het midden gezet en een achtergrond gegeven.
               Alle overige code is JavaScript. Alle assets zijn png's die ik gemaakt heb met Adobe XD. Deze zijn
               allemaal gebaseerd op de sprites uit Super Mario Bros. Voor alle assets heb ik een JavaScript in een
               variabele aangemaakt. Elk variabel zit een class. In de class zitten gegevens van de assets en deze
               worden opgeroepen door de draw() functie of de update() functie. De update() functie is voor variabelen
               die blijven bewegen op het scherm (bv. de vijanden). Deze functies worden opgeroepen met de animate()
-              functie onderin de code. Hieronder een beschrijving van alle variablen in de code.</p>
-      
-            <p> Om te beginnen, de speler: Ik heb de speler (Mario) geprogrammeerd om altijd beinvloed te worden
+              functie onderin de code. Hieronder een beschrijving van alle variablen in de code. </p>
+            <div class="image-container">
+              <img src="img/Mario_Assets.png" alt="Mario Sidescroller Assets">
+              <p>Alle assets gemaakt in Adobe XD</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="image-container">
+              <img src="img/MarioGame4.png" alt="Mario Close Up">
+              <p>Je kunt Mario besturen met WASD</p>
+            </div>
+            <p><span>Om te beginnen, de speler:</span> Ik heb de speler (Mario) geprogrammeerd om altijd beinvloed te
+              worden
               door zwaartekracht. Als de speler in de lucht is, valt hij naar beneden totdat hij/zij op een platform
               terecht komt. Mario kan worden bestuurd met WASD, A voor links, D voor rechts en W voor springen. Als
               de speler voorbij een bepaalde x-waarde is dan scrollt het scherm mee. Alle andere assets gaan dan
@@ -62,36 +77,249 @@
               geraakt wordt door een vijand dan wordt het spel gereset. Wat nog meer uniek is aan de speler is dat
               hij 2 sprites heeft: Naar links kijken en naar rechts kijken. Dit wordt ook bepaald met de knoppen A
               en D.</p>
-            <p>De vijanden: Ik heb 3 verschillende vijanden gemaakt. De goomba, de bullet bill en de pirahna plant.
-              De goomba en de bullet bill zijn op dezelde manier geprogrammeerd. Ze verplaatsen altijd naar links, als
-              ze de speler van links of rechts aanraken dan reset het spel en wanneer de speler bovenop hun springt
-              dan verdwijnen ze en krijgt de speler een boost naar boven. De pirahna plant is geprogrammeerd om steeds
-              naar boven en naar beneden te gaan. Als de plant boven een bepaalde hoogte is gaat hij naar beneden en
-              andersom. Als de speler in contact komt met de plant dan reset het spel.</p>
-            <p>De platforms: Alle platforms zijn geprogrameerd om de speler tegen te houden als hij/zij er bovenop
-              springt. Als de speler op een platform landt dan wordt de Y-velocity op 0 gezet. Bijna alle platforms
-              zijn hetzelfde met het enige verschil de grootte. Het enige uitzondering is de "Moving Platform" die
-              naar links en rechts beweegt.</p>
-            <p>Voor- en achtergrond: De achtergrond scrollt langzamer mee dan de voorgrond. Dat is te zien aan de
-              wolken. Dit geeft een diepte gevoel aan het spel. De voorgrond zijn de assets die voor de speler komen
-              te staan. Deze worden als laatste in de animate() functie geladen, waaronder het kasteel, en de warp
-              pipes van level 2.
-            </p>
-      
-            <a href="https://dylanabrahams.github.io/Dylan-MarioSidescroller/">Speel prototype</a>
-            <p> Eigen reflectie: Ik ben trots op wat ik heb gemaakt in zo'n korte tijd. Ik had hiervoor nog nooit
-              JavaScript
-              gebruikt, maar had wel snel de smaak te pakken. Achteraf had ik zeker nog nieuwe
-              dingen toe kunnen voegen en bepaalde bugs eruit kunnen halen. De goombas worden niet beinvloed door
-              zwaartekracht omdat ze anders door de platforms heen zouden vallen. Er is geen checkpoint systeem. Het
-              2e level heeft niet echt een einde. Dit zijn dingen die achteraf wel op te lossen waren. </p>
-            <p> Voor dit project ben ik genomineerd voor de <a
-                href="https://cmd-amsterdam.nl/portfolio/mario-sidescroller-game/" class="golden-dot">Golden Dot
-                Awards 2023</a>
-            </p>
+          </div>
+          <p><span>De vijanden:</span> Ik heb 3 verschillende vijanden gemaakt. De goomba, de bullet bill en de pirahna
+            plant.
+            De goomba en de bullet bill zijn op dezelde manier geprogrammeerd. Ze verplaatsen altijd naar links, als
+            ze de speler van links of rechts aanraken dan reset het spel en wanneer de speler bovenop hun springt
+            dan verdwijnen ze en krijgt de speler een boost naar boven. De pirahna plant is geprogrammeerd om steeds
+            naar boven en naar beneden te gaan. Als de plant boven een bepaalde hoogte is gaat hij naar beneden en
+            andersom. Als de speler in contact komt met de plant dan reset het spel.</p>
+          <div class="img-list">
+            <div class="image-container">
+              <img src="img/MarioEnemy1.png" alt="Goomba">
+              <p>Goomba - Loopt altijd naar links</p>
+            </div>
+            <div class="image-container">
+              <img src="img/MarioEnemy2.png" alt="Bullet Bill">
+              <p>Bullet Bill - Vliegt altijd naar links</p>
+            </div>
+            <div class="image-container">
+              <img src="img/MarioEnemy3.png" alt="Piranha Plant">
+              <p>Piranha Plant - Gaat op en neer</p>
+            </div>
+          </div>
+          <p><span>De platforms:</span> Alle platforms zijn geprogrameerd om de speler tegen te houden als hij/zij er
+            bovenop
+            springt. Als de speler op een platform landt dan wordt de Y-velocity op 0 gezet. Bijna alle platforms
+            zijn hetzelfde met het enige verschil de grootte. Het enige uitzondering is de "Moving Platform" die
+            naar links en rechts beweegt.</p>
+          <p><span>Voor- en achtergrond:</span> De achtergrond scrollt langzamer mee dan de voorgrond. Dat is te zien
+            aan de
+            wolken. Dit geeft een diepte gevoel aan het spel. De voorgrond zijn de assets die voor de speler komen
+            te staan. Deze worden als laatste in de animate() functie geladen, waaronder het kasteel, en de warp
+            pipes van level 2.
+          </p>
+          <p><a href="https://dylanabrahams.github.io/Dylan-MarioSidescroller/" class="btn btn3"><i
+                class="fa-solid fa-up-right-from-square"></i> Speel prototype</a></p>
+          <p><a href="https://github.com/DylanAbrahams/Dylan-MarioSidescroller" class="btn btn3"><i
+                class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+          <p> <span>Eigen reflectie:</span> Ik ben trots op wat ik heb gemaakt in zo'n korte tijd. Ik had hiervoor nog
+            nooit
+            JavaScript
+            gebruikt, maar had wel snel de smaak te pakken. Achteraf had ik zeker nog nieuwe
+            dingen toe kunnen voegen en bepaalde bugs eruit kunnen halen. De goombas worden niet beinvloed door
+            zwaartekracht omdat ze anders door de platforms heen zouden vallen. Er is geen checkpoint systeem. Het
+            2e level heeft niet echt een einde. Dit zijn dingen die achteraf wel op te lossen waren. </p>
+          <p> Voor dit project ben ik genomineerd voor de <span>Golden Dot Awards 2023</span>. Elk schooljaar wordt het
+            beste studentenwerk gevonden door de leraren genomineerd voor de Golden Dot Awards. Voor dit project was
+            mijn docent onder de indruk en heeft hij mij genomineerd. Meer informatie in de link hieronder.</p>
+          <a href="https://cmd-amsterdam.nl/portfolio/mario-sidescroller-game/" class="btn btn3"><i
+              class="fa-solid fa-up-right-from-square"></i> Golden Dot Awards</a>
         </div>
-        <div class="portfolio-col-2">
+      </div>
+    </div>
+  </div>
 
+  <div id="project2">
+    <div class="portfolio-container">
+      <div class="row">
+        <div class="title-area">
+          <h2 class="sub-title">Tainted Return</h2>
+          <h3>Details:</h3>
+          <ul>
+            <li><span>Toegepaste skills:</span> HTML, CSS, JavaScript, Adobe XD, Adobe Illustrator</li>
+            <li><span>Datum:</span> 12 juni 2023</li>
+            <li><span>Duur:</span> 3 weken</li>
+            <li><span>Uitvoering:</span> Team van 4</li>
+          </ul>
+        </div>
+        <div class="portfolio-col">
+          <h3>De opdracht</h3>
+          <p>Dit project was het Passieproject waar je een product kon
+            maken naar eigen voorkeur. Ik heb ervoor gekozen om
+            verder te gaan met sidescrollers in JavaScript. Dit project was in een team van 3. Ons team bestond uit 2
+            programmeurs (waaronder mezelf) en 1 artiest. Verder hebben we allemaal meegeholpen met het concept en
+            verhaal. De assets zijn gemaakt met Adobe Illustrator met behulp van een tekentablet.
+          </p>
+          <p>De bedoeling van het project was om de wereld iets beter te maken met behulp van je project. Denk aan
+            mensen
+            activeren/informeren over milieu, inclusiviteit, armoede etc. Wij hebben gekozen voor milieu en plastic.
+          </p>
+          <h3>Taakverdeling</h3>
+          <p>In deze opdracht werkte ik samen met 3 medestudenten: Elton Irokromo, Melvin Vermast & Eva Vrieze. Ons team
+            bestond uit 2 programmeurs en 2 artiesten.</p>
+          <p><span>Dylan (ikzelf) - Programmeur</span>: </p>
+          <p><span>Melvin - Programmeur</span>: </p>
+          <p><span>Eva - Artiest</span>: Eva was onze main artiest.</p>
+          <p><span>Elton - Artiest</span>: Elton kwam pas halverwege het project in ons team, we waren eerst een team
+            van 3. Hij was verantwoordelijk voor het ontwerp van het beginscherm en de cutscenes. Verder was hij veel
+            bezig met de opdrachten buiten het product om, waaronder 3D-versies van de figuren in het spel in Blender.
+          </p>
+
+          <h3>Uitvoering</h3>
+          <ul>
+            <p>
+              <span>Verhaal:</span> Het verhaalt speelt af op aarde in 2258. De hele wereld is vernietigd. Alles is
+              verlaten en er zijn gemuteerde vijanden gebaseerd op plastic. Onze hoofdpersonage is een astronaut die al
+              een lange
+              tijd weg is geweest van aarde. Nu dat iedereen op aarde is gestorven heeft hij de opdracht gekregen om
+              onderzoek te doen naar de planeet. Tijdens het spel komt er ook dialoog in beeld als de speler bepaalde
+              items
+              gevonden heeft.
+            </p>
+            <p>
+              <span>De speler:</span> Onze astronaut, in ons verhaal wordt hij 'Leutenant' genoemd, wordt bestuurd met
+              WASD. A
+              voor links lopen, D voor rechts lopen en W voor springen. Verder heeft hij een zwaard en kan hij slaan met
+              F. Linksbovenin is een health bar en een mana bar. De health bar gaat omlaag als de speler geraakt wordt
+              door een vijand. De mana bar wordt gebruikt door het zwaard. Als je mana hebt, dan schiet het zwaard een
+              projectiel. Er liggen potions rondom het level om health en mana te herstellen.
+            </p>
+            <p>
+              <span>De vijanden:</span> Er zijn 2 vijanden. Deze zijn allebei gebaseerd op het plastic probleem. De
+              eerste is een
+              gemuteerde rat 2 hoofden gebaseerd op plastic afval. Deze is geprogrameerd om naar links en rechts te
+              lopen.
+              Als de speler in contact komt met de rat neemt hij 20% schade. Als 2e enemy hebben we de plastic soep.
+              Deze kan projectielen schieten die 50% schade doen naar de speler. Verder is de wereld gevuld met spike
+              planten die de speler afmaken als hij er tegenaan loopt.
+            </p>
+            <p>
+              <span>Collectibles:</span> Er liggen tandwielen rondom het level. Er zijn in totaal 30 in het spel. Dit
+              geeft de
+              speler een extra opdracht naast het halen van het einde. Zorg voor een zo goed mogelijke score.
+            </p>
+            <p>
+              <span>Animaties:</span> Er zijn animaties toegevoegd door middel van spritesheets. De speler heeft 3
+              verschillende
+              spritesheets: Stilstaan, rennen en zwaard gebruiken. Verder hebben de tandwielen een spin animatie, de
+              ratten hebben een loop animatie en de plastic soep heeft een schiet animatie.
+            </p>
+            <p>
+              <span>Muziek en SFX: </span>Er is een dramatische achtergrond muziek toegevoegd om een sfeer te geven aan
+              het spel.
+              Verder zijn er sound effects voor de speler, het zwaard, de enemies, de collectibles en meer.
+            </p>
+            <p>
+              <span>Einde: </span>Aan het einde van het level komt er een silhouette van achter die op de speler
+              afloopt. Wanneer
+              de speler wordt geraakt komt er een eindscherm met de eindscores en een message van het spel.
+            </p>
+            <a href="https://dylanabrahams.github.io/Dylan-TaintedReturn/">Speel prototype</a>
+            <p><span>Eigen reflectie: </span>Ik ben heel blij met het eindresultaat. Het spel is heel mooi geworden.
+              Vooral de
+              animaties en het zwaard zijn onderdelen waar ik zelf heel trots op ben. Wat wel beter had gekund is de
+              leveldesign. We hebben een mooi level gemaakt, maar je kon er niet makkelijk een platformer mee maken,
+              want er waren geen valkuilen. Daarom hebben we besloten om spike plants overal toe te voegen en
+              brick platforms erbij te doen. De spikeplants waren helaas een beetje gebugd: de hitbox was groter dan
+              het lijkt, waardoor de speler dood zou gaan zonder de plant echt aan te raken.</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project3">
+    <div class="portfolio-container">
+      <div class="row">
+        <div class="title-area">
+          <h2 class="sub-title">Responsive Website</h2>
+          <h3>Details:</h3>
+          <ul>
+            <li><span>Toegepaste skills:</span> HTML, CSS, JavaScript< <li><span>Datum:</span> 4 september 2023</li>
+            <li><span>Duur:</span> 5 weken</li>
+            <li><span>Uitvoering:</span> Individueel</li>
+          </ul>
+        </div>
+        <div class="portfolio-col"></div>
+        <h3>De opdracht:</h3>
+        <p>Voor dit project moesten we zelf een website uitkiezen en
+          deze met HTML, CSS en JavaScript na te maken. Ik
+          heb zelf gekozen voor <a href="https://rightourstory.com">rightourstory.com</a>. We moesten de website
+          responsive maken dmv media queries en we moesten 2 pagina's namaken. Ik heb de home pagina en de 'Bullied
+          Button' pagina nagemaakt.
+        </p>
+        <h3>De uitvoering:</h3>
+        <p>Responsive: Ik heb de nav bar responsive gemaakt door deze op mobiel achter een hamburgermenu te
+          verstoppen. Als er op het hamburgermenu icoontje wordt gedrukt, dan komt de navigatie bar in beeld. Op
+          desktop is deze in de header te zien. Verder wordt de grootte van de tekst kleiner op mobiel.
+        </p>
+        <p>Flexbox: De website is ingedeeld met flexbox. Hiermee wordt bepaald of elementen naast of onder elkaar
+          komen te staan. Alles in de header staat bijvoorbeeld naast elkaar. Op mobiel staan alle teksten en
+          afbeeldingen onder elkaar. Op desktop is er meer plek, dus zijn er elementen naast elkaar. Dit wordt
+          bepaald met flexbox.</p>
+        <p>2e pagina: De bullied button pagina heeft een eigen CSS bestand. Hierin wordt een andere achtergrond
+          geladen worden alle CSS functies exclusief voor deze pagina opgeslagen. Deze pagina heeft ook een kleine
+          animatie op de bullied knop. Ik heb een knop toegevoegd om deze animatie aan en uit te zetten.</p>
+        <p>Overige CSS: Bij deze opdracht was het niet toegestaan om gebruik te maken van classes en divs. Alle
+          elementen zijn in CSS geselecteerd met 'sections' en 'nth-of-types'. Verder zijn er gebruik gemaakt van
+          custom properties en online fonts.
+          <a href="https://dylanabrahams.github.io/Dylan-FED/">Bekijk website</a>
+          <p>
+            Eigen reflectie: Ik vond dit een leuk project om te doen. Het was heel erg leerzaam en ik kan na dit
+            vak gedaan te hebben een stuk beter overweg met HTML, CSS en JS. Een punt voor verbetering is wel de
+            responsiviteit. Achteraf had ik meer media queries erin gezet om meer verschillende schermgroottes
+            goed te laten werken met de letter- en afbeeldinggroottes.
+          </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="project4">
+    <div class="portfolio-container">
+      <div class="row">
+        <div class="title-area">
+          <h2 class="sub-title">Pantheon</h2>
+          <h3>Details:</h3>
+          <ul>
+            <li><span>Toegepaste skills:</span> HTML, JavaScript, MongoDB</li>
+            <li><span>Datum:</span> 5 februari 2024</li>
+            <li><span>Duur:</span> 10 weken</li>
+            <li><span>Uitvoering:</span> Team van 5</li>
+          </ul>
+        </div>
+        <div class="portfolio-col">
+          <h3>De opdracht</h3>
+          <p></p>
+          <h3>Taakverdeling</h3>
+          <p>In deze opdracht werkte ik samen met 4 teamgenoten: Liam van Bart, Sybren Loos, Ruben Beck & Sem van Wijk.
+            Ons team werd verdeeld in 3 back-end developers en 2 front-end developers.</p>
+          <p><span>Dylan (ikzelf) - Back-end Developer:</span> Ik was zelf verantwoordelijk voor het filtersysteem, het
+            matchsysteem, het sorteersysteem en het kunnen opslaan van de antwoorden van de gebruikers.</p>
+          <p><span>Liam - Back-end Developer:</span> Liam was veantwoordelijk voor het koppelen van opgeslagen data met
+            een profiel. Alles wat te maken heeft met het bewerken van je accountgegevens heeft hij geprogrammerd.</p>
+          <p><span>Sybren - Back-end Developer:</span> Sybren was verantwoordelijk voor het inlogsysteem. Hij heeft
+            ervoor
+            gezorgd dat een gebruiker een account kan aanmaken, deze wordt opgeslagen in de database, en de gebruiker
+            vervolgens kan inloggen.</p>
+          <p><span>Ruben & Sem - Front-end Developers:</span> Ruben & Sem waren de 2 front-enders. Dit betekent dat zij
+            verantwoordelijk zijn voor de layout, de vormgeving en gedeeltelijk de inhoud. Samen hebben zij de hele app
+            met Adobe XD geschetst en deze met HTML en CSS na te maken.</p>
+          <p><span>Samen:</span> We hebben met z'n allen samen het concept van de app bedacht. Verder was iedereen
+            verantwoordelijk voor hun eigen code, maar ook voor elkaars code. Als iemand wijzigingen had gemaakt aan de
+            code, zouden er altijd mensen moeten zijn om deze te checken voordat we onze volledige applicatie zouden
+            updaten.</p>
+          <h3>De uitvoering</h3>
+
+          <p>Omdat deze website vanaf je eigen terminal runt, staat deze helaas niet online op github. Om deze te runnen
+            op je eigen desktop moet je de files van github downloaden. Deze bevat niet alles wat je nodig hebt, voor de
+            overige spullen zul je contact op moeten nemen met 1 van de ons. Als je alles hebt gedownloadt kun je in de
+            terminal <i>npm install</i> doen voor de packages en daarna <i>npm run dev</i> om de website online te
+            zetten.</p>
+          <p><a href="https://github.com/Liamvanbart1/team1" class="btn btn3"><i
+                class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
         </div>
       </div>
     </div>
@@ -100,135 +328,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="project">
-      <h3 id="project2">Project 2: Tainted Return</h3>
-      <h4>Details:</h4>
-      <ul>
-        <li><strong>Toegepaste skills:</strong> HTML, CSS, <strong>JavaScript</strong>, Adobe XD, Adobe Illustrator
-        </li>
-        <li><strong>Datum:</strong> 12 juni 2023</li>
-        <li><strong>Duur:</strong> 3 weken</li>
-      </ul>
-      <p>Dit project was het Passieproject waar je een product kon
-        maken naar eigen voorkeur. Ik heb ervoor gekozen om
-        verder te gaan met sidescrollers in JavaScript. Dit project was in een team van 3. Ons team bestond uit 2
-        programmeurs (waaronder mezelf) en 1 artiest. Verder hebben we allemaal meegeholpen met het concept en
-        verhaal. De assets zijn gemaakt met Adobe Illustrator met behulp van een tekentablet.
-      </p>
-      <p>De bedoeling van het project was om de wereld iets beter te maken met behulp van je project. Denk aan
-        mensen
-        activeren/informeren over milieu, inclusiviteit, armoede etc. Wij hebben gekozen voor milieu en plastic.
-      </p>
-      <ul>
-        <p>
-          Verhaal: Het verhaalt speelt af op aarde in 2258. De hele wereld is vernietigd. Alles is verlaten en
-          er zijn
-          gemuteerde vijanden gebaseerd op plastic. Onze hoofdpersonage is een astronaut die al een lange tijd
-          weg is
-          geweest van aarde. Nu dat iedereen op aarde is gestorven heeft hij de opdracht gekregen om onderzoek
-          te doen
-          naar de planeet. Tijdens het spel komt er ook dialoog in beeld als de speler bepaalde items gevonden
-          heeft.
-        </p>
-        <p>
-          De speler: Onze astronaut, in ons verhaal wordt hij 'Leutenant' genoemd, wordt bestuurd met WASD. A
-          voor
-          links lopen, D voor rechts lopen en W voor springen. Verder heeft hij een zwaard en kan hij slaan met
-          F.
-          Linksbovenin is een health bar en een mana bar. De health bar gaat omlaag als de speler geraakt wordt
-          door
-          een vijand. De mana bar wordt gebruikt door het zwaard. Als je mana hebt, dan schiet het zwaard een
-          projectiel. Er liggen potions rondom het level om health en mana te herstellen.
-        </p>
-        <p>
-          De vijanden: Er zijn 2 vijanden. Deze zijn allebei gebaseerd op het plastic probleem. De eerste is een
-          gemuteerde rat 2 hoofden gebaseerd op plastic afval. Deze is geprogrameerd om naar links en rechts te
-          lopen.
-          Als de speler in contact komt met de rat neemt hij 20% schade. Als 2e enemy hebben we de plastic soep.
-          Deze
-          kan projectielen schieten die 50% schade doen naar de speler. Verder is de wereld gevuld met spike
-          planten
-          die de speler afmaken als hij er tegenaan loopt.
-        </p>
-        <p>
-          Collectibles: Er liggen tandwielen rondom het level. Er zijn in totaal 30 in het spel. Dit geeft de
-          speler een extra opdracht naast het halen van het einde. Zorg voor een zo goed mogelijke score.
-        </p>
-        <p>
-          Animaties: Er zijn animaties toegevoegd door middel van spritesheets. De speler heeft 3 verschillende
-          spritesheets: Stilstaan, rennen en zwaard gebruiken. Verder hebben de tandwielen een spin animatie, de
-          ratten hebben een loop animatie en de plastic soep heeft een schiet animatie.
-        </p>
-        <p>
-          Muziek en SFX: Er is een dramatische achtergrond muziek toegevoegd om een sfeer te geven aan het spel.
-          Verder zijn er sound effects voor de speler, het zwaard, de enemies, de collectibles en meer.
-        </p>
-        <p>
-          Einde: Aan het einde van het level komt er een silhouette van achter die op de speler afloopt. Wanneer
-          de speler wordt geraakt komt er een eindscherm met de eindscores en een message van het spel.
-        </p>
-        <a href="https://dylanabrahams.github.io/Dylan-TaintedReturn/">Speel prototype</a>
-        <p> Eigen reflectie: Ik ben heel blij met het eindresultaat. Het spel is heel mooi geworden. Vooral de
-          animaties en het zwaard zijn onderdelen waar ik zelf heel trots op ben. Wat wel beter had gekund is de
-          leveldesign. We hebben een mooi level gemaakt, maar je kon er niet makkelijk een platformer mee maken,
-          want er waren geen valkuilen. Daarom hebben we besloten om spike plants overal toe te voegen en
-          brick platforms erbij te doen. De spikeplants waren helaas een beetje gebugd: de hitbox was groter dan
-          het lijkt, waardoor de speler dood zou gaan zonder de plant echt aan te raken.</p>
-      </ul>
-    </div>
-    <div class="project">
-      <h3 id="project3">Project 3: Responsive Website</h3>
-      <ul>
-        <li><strong>Toegepaste skills:</strong> HTML, <strong>CSS</strong>, JavaScript</li>
-        <li><strong>Datum:</strong> 4 september 2023</li>
-        <li><strong>Duur:</strong> 5 weken</li>
-      </ul>
-      <p>Voor dit project moesten we zelf een website uitkiezen en
-        deze met HTML, CSS en JavaScript na te maken. Ik
-        heb zelf gekozen voor <a href="https://rightourstory.com">rightourstory.com</a>. We moesten de website
-        responsive maken dmv media queries en we moesten 2 pagina's namaken. Ik heb de home pagina en de 'Bullied
-        Button' pagina nagemaakt.
-      </p>
-      <p>Responsive: Ik heb de nav bar responsive gemaakt door deze op mobiel achter een hamburgermenu te
-        verstoppen. Als er op het hamburgermenu icoontje wordt gedrukt, dan komt de navigatie bar in beeld. Op
-        desktop is deze in de header te zien. Verder wordt de grootte van de tekst kleiner op mobiel.
-      </p>
-      <p>Flexbox: De website is ingedeeld met flexbox. Hiermee wordt bepaald of elementen naast of onder elkaar
-        komen te staan. Alles in de header staat bijvoorbeeld naast elkaar. Op mobiel staan alle teksten en
-        afbeeldingen onder elkaar. Op desktop is er meer plek, dus zijn er elementen naast elkaar. Dit wordt
-        bepaald met flexbox.</p>
-      <p>2e pagina: De bullied button pagina heeft een eigen CSS bestand. Hierin wordt een andere achtergrond
-        geladen worden alle CSS functies exclusief voor deze pagina opgeslagen. Deze pagina heeft ook een kleine
-        animatie op de bullied knop. Ik heb een knop toegevoegd om deze animatie aan en uit te zetten.</p>
-      <p>Overige CSS: Bij deze opdracht was het niet toegestaan om gebruik te maken van classes en divs. Alle
-        elementen zijn in CSS geselecteerd met 'sections' en 'nth-of-types'. Verder zijn er gebruik gemaakt van
-        custom properties en online fonts.
-        <a href="https://dylanabrahams.github.io/Dylan-FED/">Bekijk website</a>
-        <p>
-          Eigen reflectie: Ik vond dit een leuk project om te doen. Het was heel erg leerzaam en ik kan na dit
-          vak gedaan te hebben een stuk beter overweg met HTML, CSS en JS. Een punt voor verbetering is wel de
-          responsiviteit. Achteraf had ik meer media queries erin gezet om meer verschillende schermgroottes
-          goed te laten werken met de letter- en afbeeldinggroottes.
-        </p>
-    </div>
-
-
-
   <script src="script.js"></script>
-
-
 </body>
 
 </html>

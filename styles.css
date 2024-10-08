@@ -3,13 +3,13 @@
 /*********************/
 :root {
 	/* startje */
-	--active-color: #ff004f;
+	--active-color: #008609;
   --about-text-color: #ababab;
   --background-color: #080808;
   --tab-background: #262626;
   --text-color: white;
   --black-screen: black;
-  --about-tabs: #b54769;
+  --about-tabs: #4bb547;
   --msg-success:#61b752;
 }
 
@@ -322,7 +322,7 @@ nav ul li a:hover::after {
 }
 .social-icons a{
   text-decoration: none;
-  font-size: 30px;
+  font-size: 50px;
   margin-right: 15px;
   color: var(--about-text-color);
   display: inline-block;
@@ -436,12 +436,65 @@ nav .fas{
 }
 
 /* ------------------portfolio pagina-------------- */
+.portfolio-container {
+  padding: 10px 15%;
+  top: 0;
+  z-index: 999; 
+}
 .title-area{
   width:100%;
 }
-.portfolio-col-1{
-  flex-basis: 60%;
+.title-area h2{
+  margin: 10px;
 }
-.portfolio-col-2 {
-  flex-basis: 35%;
+.title-area img{
+  width: 800px;
+  margin-top: 20px;
 }
+.title-area span, .portfolio-col span{
+  color:var(--about-tabs);
+  font-weight: 550;
+}
+.portfolio-col .content{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+}
+.title-area h3, .portfolio-col h3{
+  font-size: 20px;
+}
+.portfolio-col p{
+  width:80%;
+}
+.portfolio-col .content img {
+  height: auto; 
+}
+.portfolio-col .content p{
+  width:55%;
+}
+.image-container{
+  width:30%;
+  text-align:center;
+  margin: 0;
+}
+.image-container img{
+  width:100%;
+  height:auto;
+}
+.portfolio-col .image-container p{
+  width:100%;
+  margin: 10px;
+  color:var(--about-text-color)
+}
+.img-list{
+  display:flex;
+  justify-content:flex-start;
+}
+.img-list .image-container img{
+  width:50%;
+}
+.btn3 {
+  display:inline-block;
+  margin: 10px;
+}
+
