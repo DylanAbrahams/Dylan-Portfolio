@@ -14,7 +14,7 @@
   <div id="header-short">
     <div class="container">
       <nav>
-        <img src="img/DylanLogo.png" class="logo">
+        <a href="index.html"><img src="img/DylanLogo.png" class="logo"></a>
         <ul id="sidemenu">
           <li><a href="#project1">Mario Sidescroller</a></li>
           <li><a href="#project2">Tainted Return</a></li>
@@ -85,7 +85,7 @@
             dan verdwijnen ze en krijgt de speler een boost naar boven. De pirahna plant is geprogrammeerd om steeds
             naar boven en naar beneden te gaan. Als de plant boven een bepaalde hoogte is gaat hij naar beneden en
             andersom. Als de speler in contact komt met de plant dan reset het spel.</p>
-          <div class="img-list">
+          <div class="img-list enemy">
             <div class="image-container">
               <img src="img/MarioEnemy1.png" alt="Goomba">
               <p>Goomba - Loopt altijd naar links</p>
@@ -100,20 +100,37 @@
             </div>
           </div>
           <p><span>De platforms:</span> Alle platforms zijn geprogrameerd om de speler tegen te houden als hij/zij er
-            bovenop
-            springt. Als de speler op een platform landt dan wordt de Y-velocity op 0 gezet. Bijna alle platforms
-            zijn hetzelfde met het enige verschil de grootte. Het enige uitzondering is de "Moving Platform" die
-            naar links en rechts beweegt.</p>
-          <p><span>Voor- en achtergrond:</span> De achtergrond scrollt langzamer mee dan de voorgrond. Dat is te zien
-            aan de
-            wolken. Dit geeft een diepte gevoel aan het spel. De voorgrond zijn de assets die voor de speler komen
-            te staan. Deze worden als laatste in de animate() functie geladen, waaronder het kasteel, en de warp
-            pipes van level 2.
+            bovenop springt. Als de speler op een platform landt dan wordt de Y-velocity op 0 gezet. Bijna alle
+            platforms zijn hetzelfde met het enige verschil de grootte. Het enige uitzondering is de "Moving Platform"
+            die naar links en rechts beweegt.</p>
+          <div class="content img-list">
+            <p><span>Voor- en achtergrond:</span> De achtergrond scrollt langzamer mee dan de voorgrond. Dat is te zien
+              aan de wolken. Dit geeft een diepte gevoel aan het spel. De voorgrond zijn de assets die voor de speler
+              komen te staan. Deze worden als laatste in de animate() functie geladen, waaronder het kasteel, en de warp
+              pipes van level 2.
+              <div class="image-container">
+                <img src="img/MarioAchtergrond1.png" alt="Achtergrond 1">
+                <p>Achtergrond links</p>
+              </div>
+              <div class="image-container">
+                <img src="img/MarioAchtergrond2.png" alt="Achtergrond 2">
+                <p>Achtergrond rechts</p>
+              </div>
+          </div>
           </p>
           <p><a href="https://dylanabrahams.github.io/Dylan-MarioSidescroller/" class="btn btn3"><i
                 class="fa-solid fa-up-right-from-square"></i> Speel prototype</a></p>
           <p><a href="https://github.com/DylanAbrahams/Dylan-MarioSidescroller" class="btn btn3"><i
                 class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+          <p> Voor dit project ben ik genomineerd voor de <span>Golden Dot Awards 2023</span>. Elk schooljaar wordt
+            het beste studentenwerk gevonden door de leraren genomineerd voor de Golden Dot Awards. Voor dit project
+            was mijn docent onder de indruk en heeft hij mij genomineerd. Meer informatie in de link hieronder.</p>
+          <div class="image-container big-img">
+            <img src="img/MarioGoldenDot.png" alt="Golden Dot Website">
+            <p>Golden Dot Award Nominatie</p>
+          </div>
+          <a href="https://cmd-amsterdam.nl/portfolio/mario-sidescroller-game/" class="btn btn3"><i
+              class="fa-solid fa-up-right-from-square"></i> Golden Dot Awards</a>
           <p> <span>Eigen reflectie:</span> Ik ben trots op wat ik heb gemaakt in zo'n korte tijd. Ik had hiervoor nog
             nooit
             JavaScript
@@ -121,11 +138,6 @@
             dingen toe kunnen voegen en bepaalde bugs eruit kunnen halen. De goombas worden niet beinvloed door
             zwaartekracht omdat ze anders door de platforms heen zouden vallen. Er is geen checkpoint systeem. Het
             2e level heeft niet echt een einde. Dit zijn dingen die achteraf wel op te lossen waren. </p>
-          <p> Voor dit project ben ik genomineerd voor de <span>Golden Dot Awards 2023</span>. Elk schooljaar wordt het
-            beste studentenwerk gevonden door de leraren genomineerd voor de Golden Dot Awards. Voor dit project was
-            mijn docent onder de indruk en heeft hij mij genomineerd. Meer informatie in de link hieronder.</p>
-          <a href="https://cmd-amsterdam.nl/portfolio/mario-sidescroller-game/" class="btn btn3"><i
-              class="fa-solid fa-up-right-from-square"></i> Golden Dot Awards</a>
         </div>
       </div>
     </div>
@@ -143,69 +155,141 @@
             <li><span>Duur:</span> 3 weken</li>
             <li><span>Uitvoering:</span> Team van 4</li>
           </ul>
+          <img src="img/TaintedReturn1.png" alt="Tainted Return Beginscherm">
         </div>
         <div class="portfolio-col">
           <h3>De opdracht</h3>
           <p>Dit project was het Passieproject waar je een product kon
             maken naar eigen voorkeur. Ik heb ervoor gekozen om
-            verder te gaan met sidescrollers in JavaScript. Dit project was in een team van 3. Ons team bestond uit 2
-            programmeurs (waaronder mezelf) en 1 artiest. Verder hebben we allemaal meegeholpen met het concept en
-            verhaal. De assets zijn gemaakt met Adobe Illustrator met behulp van een tekentablet.
-          </p>
-          <p>De bedoeling van het project was om de wereld iets beter te maken met behulp van je project. Denk aan
-            mensen
-            activeren/informeren over milieu, inclusiviteit, armoede etc. Wij hebben gekozen voor milieu en plastic.
+            verder te gaan met sidescrollers in JavaScript. De bedoeling van het project was om de wereld iets beter te
+            maken met behulp van je project. Denk aan mensen activeren/informeren over milieu, inclusiviteit, armoede
+            etc. Wij hebben gekozen voor milieu en plastic.
           </p>
           <h3>Taakverdeling</h3>
           <p>In deze opdracht werkte ik samen met 3 medestudenten: Elton Irokromo, Melvin Vermast & Eva Vrieze. Ons team
-            bestond uit 2 programmeurs en 2 artiesten.</p>
-          <p><span>Dylan (ikzelf) - Programmeur</span>: </p>
-          <p><span>Melvin - Programmeur</span>: </p>
-          <p><span>Eva - Artiest</span>: Eva was onze main artiest.</p>
-          <p><span>Elton - Artiest</span>: Elton kwam pas halverwege het project in ons team, we waren eerst een team
+            bestond uit 2 programmeurs en 2 ontwerpers.</p>
+          <p><span>Dylan (ikzelf) - Programmeur</span>: Ik was 1 van de 2 programmeurs, Melvin en ik waren dus samen
+            verantwoordelijk voor alle code in ons project. Ik heb de speler geprogrammeerd, deze heb ik kunnen laten
+            springen, lopen, aanvallen etc. Verder heb ik de vijanden geprogrammeerd, die de speler kunnen aanvallen. Ik
+            heb de animaties in het spel gezet dmv spritesheets en ik heb het einde van het spel geprogrammeerd.</p>
+          <p><span>Melvin - Programmeur</span>: Melvin was verantwoordelijk voor het programmeren van het beginscherm,
+            de textboxes, de muziek, de SFX, de life/mana bar, de potions en de spiked plants. Verder had hij veel
+            meegeholpen met
+            het programmeren van de enemies. Ook had hij een paar assets gemaakt waaronder de potions, de spiked plants,
+            de bricks en de gears.</p>
+          <p><span>Eva - Ontwerper</span>: Eva was onze main artist. Zij was verantwoordelijk voor het ontwerp van de
+            map
+            waarin het spel afspeelt, de speler, de vijanden, voor- en achtergrond etc. Deze heeft ze gemaakt in Adobe
+            Illustrator.</p>
+          <p><span>Elton - Ontwerper</span>: Elton kwam pas halverwege het project in ons team, we waren eerst een team
             van 3. Hij was verantwoordelijk voor het ontwerp van het beginscherm en de cutscenes. Verder was hij veel
             bezig met de opdrachten buiten het product om, waaronder 3D-versies van de figuren in het spel in Blender.
           </p>
+          <p><span>Samen</span>: We hebben met z'n alle het concept van het spel bedacht met het verhaal en boodschap
+            erachter. Ditzelfde geldt voor alle dialoog dat in het spel te zien is. Verder hebben Melvin & ik samen de
+            level design gedaan.</p>
 
           <h3>Uitvoering</h3>
           <ul>
             <p>
               <span>Verhaal:</span> Het verhaalt speelt af op aarde in 2258. De hele wereld is vernietigd. Alles is
               verlaten en er zijn gemuteerde vijanden gebaseerd op plastic. Onze hoofdpersonage is een astronaut die al
-              een lange
-              tijd weg is geweest van aarde. Nu dat iedereen op aarde is gestorven heeft hij de opdracht gekregen om
-              onderzoek te doen naar de planeet. Tijdens het spel komt er ook dialoog in beeld als de speler bepaalde
-              items
-              gevonden heeft.
+              een lange tijd weg is geweest van aarde. Nu dat iedereen op aarde is gestorven heeft hij de opdracht
+              gekregen om onderzoek te doen naar de planeet. Tijdens het spel komt er ook dialoog in beeld als de speler
+              bepaalde items gevonden heeft.
             </p>
+            <div class="img-list story">
+              <div class="image-container">
+                <img src="img/TaintedReturnStory.png" alt="Cutscene">
+                <p>De astronaut heeft de taak om de aarde te onderzoeken</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnStory2.png" alt="Dialoog">
+                <p>De astronaut is geland op aarde</p>
+              </div>
+            </div>
             <p>
               <span>De speler:</span> Onze astronaut, in ons verhaal wordt hij 'Leutenant' genoemd, wordt bestuurd met
-              WASD. A
-              voor links lopen, D voor rechts lopen en W voor springen. Verder heeft hij een zwaard en kan hij slaan met
-              F. Linksbovenin is een health bar en een mana bar. De health bar gaat omlaag als de speler geraakt wordt
-              door een vijand. De mana bar wordt gebruikt door het zwaard. Als je mana hebt, dan schiet het zwaard een
-              projectiel. Er liggen potions rondom het level om health en mana te herstellen.
+              WASD. A voor links lopen, D voor rechts lopen en W voor springen. Verder heeft hij een zwaard en kan hij
+              slaan met F. Linksbovenin is een health bar en een mana bar. De health bar gaat omlaag als de speler
+              geraakt wordt door een vijand. De mana bar wordt gebruikt door het zwaard. Als je mana hebt, dan schiet
+              het zwaard een projectiel. Er liggen potions rondom het level om health en mana te herstellen.
             </p>
+            <div class="img-list">
+              <div class="image-container">
+                <img src="img/TaintedReturnPlayer1.png" alt="Staat stil">
+                <p>Stilstaand</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnPlayer2.png" alt="Loopt naar rechts">
+                <p>Rennend</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnPlayer3.png" alt="Zwaardslag">
+                <p>Zwaardslag</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnPlayer4.png" alt="Zwaardslag + projectiel">
+                <p>Zwaardslag + Projectiel</p>
+              </div>
+            </div>
             <p>
               <span>De vijanden:</span> Er zijn 2 vijanden. Deze zijn allebei gebaseerd op het plastic probleem. De
               eerste is een
               gemuteerde rat 2 hoofden gebaseerd op plastic afval. Deze is geprogrameerd om naar links en rechts te
-              lopen.
-              Als de speler in contact komt met de rat neemt hij 20% schade. Als 2e enemy hebben we de plastic soep.
+              lopen. Als de speler in contact komt met de rat neemt hij 20% schade. Als 2e enemy hebben we de plastic
+              soep.
               Deze kan projectielen schieten die 50% schade doen naar de speler. Verder is de wereld gevuld met spike
               planten die de speler afmaken als hij er tegenaan loopt.
             </p>
+            <div class="img-list enemy">
+              <div class="image-container">
+                <img src="img/TaintedReturnEnemy1.png" alt="Enemy 1">
+                <p>2-koppige rat in de vorm van een plastic fles.</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnEnemy2.png" alt="Enemy 2">
+                <p>Plastic soep</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnEnemy3.png" alt="Enemy 2 + Projectiel">
+                <p>Plastic soep + vork projectiel</p>
+              </div>
+            </div>
             <p>
               <span>Collectibles:</span> Er liggen tandwielen rondom het level. Er zijn in totaal 30 in het spel. Dit
-              geeft de
-              speler een extra opdracht naast het halen van het einde. Zorg voor een zo goed mogelijke score.
+              geeft de speler een extra opdracht naast het halen van het einde. Zorg voor een zo goed mogelijke score.
+              Verder zijn er toverdrankjes te vinden rondom de map. Deze kunnen je leven/magie herstellen of zelfs
+              verhogen!
             </p>
+            <div class="img-list">
+              <div class="image-container">
+                <img src="img/TaintedReturnCollectible1.png" alt="5 Tandwielen">
+                <p>Tandwielen</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnCollectible2.png" alt="Rode potion">
+                <p>Rood - Herstelt leven</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnCollectible3.png" alt="Blauwe potion">
+                <p>Blauw - Herstelt magie</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnCollectible4.png" alt="Roze potion">
+                <p>Roze - Verhoogt leven</p>
+              </div>
+            </div>
             <p>
               <span>Animaties:</span> Er zijn animaties toegevoegd door middel van spritesheets. De speler heeft 3
               verschillende
               spritesheets: Stilstaan, rennen en zwaard gebruiken. Verder hebben de tandwielen een spin animatie, de
               ratten hebben een loop animatie en de plastic soep heeft een schiet animatie.
             </p>
+            <div class="image-container big-img">
+              <img src="img/TaintedReturnSpritesheet.png" alt="Spritesheet van alle animaties">
+              <p>Alle spritesheets in het spel</p>
+            </div>
             <p>
               <span>Muziek en SFX: </span>Er is een dramatische achtergrond muziek toegevoegd om een sfeer te geven aan
               het spel.
@@ -214,9 +298,21 @@
             <p>
               <span>Einde: </span>Aan het einde van het level komt er een silhouette van achter die op de speler
               afloopt. Wanneer
-              de speler wordt geraakt komt er een eindscherm met de eindscores en een message van het spel.
-            </p>
-            <a href="https://dylanabrahams.github.io/Dylan-TaintedReturn/">Speel prototype</a>
+              de speler wordt geraakt komt er een eindscherm met de eindscores en een message van het spel.</p>
+            <div class="img-list ">
+              <div class="image-container">
+                <img src="img/TaintedReturnEnding1.png" alt="Eind cutscene">
+                <p>Silhouette komt af op de speler</p>
+              </div>
+              <div class="image-container">
+                <img src="img/TaintedReturnEnding2.png" alt="Eindscherm">
+                <p>Eindscherm</p>
+              </div>
+            </div>
+            <p><a href="https://dylanabrahams.github.io/Dylan-TaintedReturn/" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Speel prototype</a></p>
+            <p><a href="https://github.com/DylanAbrahams/Dylan-TaintedReturn" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
             <p><span>Eigen reflectie: </span>Ik ben heel blij met het eindresultaat. Het spel is heel mooi geworden.
               Vooral de
               animaties en het zwaard zijn onderdelen waar ik zelf heel trots op ben. Wat wel beter had gekund is de
@@ -241,94 +337,308 @@
             <li><span>Duur:</span> 5 weken</li>
             <li><span>Uitvoering:</span> Individueel</li>
           </ul>
-        </div>
-        <div class="portfolio-col"></div>
-        <h3>De opdracht:</h3>
-        <p>Voor dit project moesten we zelf een website uitkiezen en
-          deze met HTML, CSS en JavaScript na te maken. Ik
-          heb zelf gekozen voor <a href="https://rightourstory.com">rightourstory.com</a>. We moesten de website
-          responsive maken dmv media queries en we moesten 2 pagina's namaken. Ik heb de home pagina en de 'Bullied
-          Button' pagina nagemaakt.
-        </p>
-        <h3>De uitvoering:</h3>
-        <p>Responsive: Ik heb de nav bar responsive gemaakt door deze op mobiel achter een hamburgermenu te
-          verstoppen. Als er op het hamburgermenu icoontje wordt gedrukt, dan komt de navigatie bar in beeld. Op
-          desktop is deze in de header te zien. Verder wordt de grootte van de tekst kleiner op mobiel.
-        </p>
-        <p>Flexbox: De website is ingedeeld met flexbox. Hiermee wordt bepaald of elementen naast of onder elkaar
-          komen te staan. Alles in de header staat bijvoorbeeld naast elkaar. Op mobiel staan alle teksten en
-          afbeeldingen onder elkaar. Op desktop is er meer plek, dus zijn er elementen naast elkaar. Dit wordt
-          bepaald met flexbox.</p>
-        <p>2e pagina: De bullied button pagina heeft een eigen CSS bestand. Hierin wordt een andere achtergrond
-          geladen worden alle CSS functies exclusief voor deze pagina opgeslagen. Deze pagina heeft ook een kleine
-          animatie op de bullied knop. Ik heb een knop toegevoegd om deze animatie aan en uit te zetten.</p>
-        <p>Overige CSS: Bij deze opdracht was het niet toegestaan om gebruik te maken van classes en divs. Alle
-          elementen zijn in CSS geselecteerd met 'sections' en 'nth-of-types'. Verder zijn er gebruik gemaakt van
-          custom properties en online fonts.
-          <a href="https://dylanabrahams.github.io/Dylan-FED/">Bekijk website</a>
-          <p>
-            Eigen reflectie: Ik vond dit een leuk project om te doen. Het was heel erg leerzaam en ik kan na dit
-            vak gedaan te hebben een stuk beter overweg met HTML, CSS en JS. Een punt voor verbetering is wel de
-            responsiviteit. Achteraf had ik meer media queries erin gezet om meer verschillende schermgroottes
-            goed te laten werken met de letter- en afbeeldinggroottes.
-          </p>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div id="project4">
-    <div class="portfolio-container">
-      <div class="row">
-        <div class="title-area">
-          <h2 class="sub-title">Pantheon</h2>
-          <h3>Details:</h3>
-          <ul>
-            <li><span>Toegepaste skills:</span> HTML, JavaScript, MongoDB</li>
-            <li><span>Datum:</span> 5 februari 2024</li>
-            <li><span>Duur:</span> 10 weken</li>
-            <li><span>Uitvoering:</span> Team van 5</li>
-          </ul>
+          <img src="img/ResponsiveWebsiteHome2.png" alt="Mijn recreatie">
         </div>
         <div class="portfolio-col">
-          <h3>De opdracht</h3>
-          <p></p>
-          <h3>Taakverdeling</h3>
-          <p>In deze opdracht werkte ik samen met 4 teamgenoten: Liam van Bart, Sybren Loos, Ruben Beck & Sem van Wijk.
-            Ons team werd verdeeld in 3 back-end developers en 2 front-end developers.</p>
-          <p><span>Dylan (ikzelf) - Back-end Developer:</span> Ik was zelf verantwoordelijk voor het filtersysteem, het
-            matchsysteem, het sorteersysteem en het kunnen opslaan van de antwoorden van de gebruikers.</p>
-          <p><span>Liam - Back-end Developer:</span> Liam was veantwoordelijk voor het koppelen van opgeslagen data met
-            een profiel. Alles wat te maken heeft met het bewerken van je accountgegevens heeft hij geprogrammerd.</p>
-          <p><span>Sybren - Back-end Developer:</span> Sybren was verantwoordelijk voor het inlogsysteem. Hij heeft
-            ervoor
-            gezorgd dat een gebruiker een account kan aanmaken, deze wordt opgeslagen in de database, en de gebruiker
-            vervolgens kan inloggen.</p>
-          <p><span>Ruben & Sem - Front-end Developers:</span> Ruben & Sem waren de 2 front-enders. Dit betekent dat zij
-            verantwoordelijk zijn voor de layout, de vormgeving en gedeeltelijk de inhoud. Samen hebben zij de hele app
-            met Adobe XD geschetst en deze met HTML en CSS na te maken.</p>
-          <p><span>Samen:</span> We hebben met z'n allen samen het concept van de app bedacht. Verder was iedereen
-            verantwoordelijk voor hun eigen code, maar ook voor elkaars code. Als iemand wijzigingen had gemaakt aan de
-            code, zouden er altijd mensen moeten zijn om deze te checken voordat we onze volledige applicatie zouden
-            updaten.</p>
-          <h3>De uitvoering</h3>
+          <h3>De opdracht:</h3>
+          <p>Voor dit project moesten we voor het vak Frontend Developement zelf een website uitkiezen en
+            deze met HTML, CSS en JavaScript na te maken. Ik heb zelf gekozen voor <a
+              href="https://rightourstory.com">rightourstory.com</a>. We moesten de website
+            responsive maken dmv media queries en we moesten 2 pagina's namaken. Ik heb de home pagina en de 'Bullied
+            Button' pagina nagemaakt.
+          </p>
+          <h3>De uitvoering:</h3>
+          <p><span>Homepagina:</span> Als eerste de homepagina. Ik heb alle kopjes tekst met flexbox op de juiste
+            locaties gezet. Verder heb ik de achtergronden gekopieerd van de originele website. Met JavaScript heb ik
+            ervoor gezorgd dat de achtergrondkleur van de header is niet zichtbaar totdat je naar beneden scrollt, net
+            als de originele website.</p>
+          <div class="img-list story">
+            <div class="image-container">
+              <img src="img/ResponsiveWebsiteHome1.png" alt="Originele website">
+              <p>Originele website van rightourstory.com</p>
+            </div>
+            <div class="image-container">
+              <img src="img/ResponsiveWebsiteHome2.png" alt="Mijn recreatie">
+              <p>Mijn recreatie</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Verder zijn er nog een paar interessante onderdelen van deze pagina, waaronder een scrollbare sectie. Dit
+              is een <em>article</em> binnen een <em>section</em>. De section bestaat uit de achtergrond, de link
+              onderin
+              en natuurlijk de article. Om ervoor te zorgen dat de tekst scrollbaar wordt, maak je in CSS de
+              <em>overflow-x</em> verborgen (<em>hidden</em>) en de <em>over-flow-y</em> op automatisch (<em>auto</em>),
+              verder maak je de article met <em>flexbox</em> verticaal door deze een <em>column</em> te maken en
+              <em>flex-wrap</em> op <em>nowrap</em> te zetten.</p>
+            <div class="image-container desktop">
+              <img src="img/ResponsiveWebsiteHome3.png" alt="Scrollbare sectie">
+              <p>Scrollbare sectie</p>
+            </div>
+          </div>
 
-          <p>Omdat deze website vanaf je eigen terminal runt, staat deze helaas niet online op github. Om deze te runnen
-            op je eigen desktop moet je de files van github downloaden. Deze bevat niet alles wat je nodig hebt, voor de
-            overige spullen zul je contact op moeten nemen met 1 van de ons. Als je alles hebt gedownloadt kun je in de
-            terminal <i>npm install</i> doen voor de packages en daarna <i>npm run dev</i> om de website online te
-            zetten.</p>
-          <p><a href="https://github.com/Liamvanbart1/team1" class="btn btn3"><i
-                class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+          <p><span>Responsive:</span> Ik heb de nav bar responsive gemaakt door deze op mobiel achter een hamburgermenu
+            te verstoppen. Als er op het hamburgermenu icoontje wordt gedrukt, dan komt de navigatie bar in beeld. Op
+            desktop is deze in de header te zien. Verder wordt de grootte van de tekst kleiner op mobiel.</p>
+          <div class="img-list enemy">
+            <div class="image-container">
+              <img src="img/ResponsiveWebsiteNav1.png" alt="Navigatie met hamburgermenu">
+              <p>Om naar de navigatie te gaan, klik je op het hamburgermenu rechtsboven</p>
+            </div>
+            <div class="image-container">
+              <img src="img/ResponsiveWebsiteNav2.png" alt="Navigatie geselecteerd">
+              <p>De navigatie op mobiel</p>
+            </div>
+          </div>
+          <p><span>Flexbox:</span> De website is ingedeeld met flexbox. Hiermee wordt bepaald of elementen naast of
+            onder elkaar komen te staan. Alles in de header staat bijvoorbeeld naast elkaar. Op mobiel staan alle
+            teksten en afbeeldingen onder elkaar. Op desktop is er meer plek, dus zijn er elementen naast elkaar. Dit
+            wordt bepaald met flexbox.</p>
+          <div class="img-list enemy">
+            <div class="image-container desktop">
+              <img src="img/ResponsiveWebsiteFlexbox1.png" alt="Lijst op desktop">
+              <p>Lijst op desktop</p>
+            </div>
+            <div class="image-container">
+              <img src="img/ResponsiveWebsiteFlexbox2.png" alt="Lijst op mobiel">
+              <p>Lijst op mobiel</p>
+            </div>
+          </div>
+          <p><span>2e pagina:</span> De bullied button pagina heeft een eigen CSS bestand. Hierin wordt een andere
+            achtergrond geladen worden alle CSS functies exclusief voor deze pagina opgeslagen. Deze pagina heeft ook
+            een kleine animatie op de bullied knop. Ik heb een knop toegevoegd om deze animatie aan en uit te zetten.
+            Verder heb ik op deze pagina veel flex-box gebruikt voor alle lijsten en korte stukken tekst.
+          </p>
+          <div class="img-list story">
+            <div class="image-container">
+              <img src="img/ResponsiveWebsiteBullied1.png" alt="Bullied Button">
+              <p>Animatie knop</p>
+            </div>
+            <div class="image-container">
+              <img src="img/ResponsiveWebsiteBullied2.png" alt="Bullied Button">
+              <p>Stukken tekst ingedeeld met flex-box</p>
+            </div>
+          </div>
+          <div>
+            <p><span>Toegankelijk:</span> Deze website is toegankelijk voor blinden/slechtzienden. Je kunt met tab
+              door
+              alle links heen gaan en alle tekst door de verteller laten spreken.
+            </p>
+            <p><span>Overige CSS:</span> Bij deze opdracht was het niet toegestaan om gebruik te maken van classes en
+              divs. Alle elementen zijn in CSS geselecteerd met 'sections' en 'nth-of-types'. Verder zijn er gebruik
+              gemaakt van custom properties en online fonts. Alle code is te zien op de github pagina.</p>
+            <p><a href="https://dylanabrahams.github.io/Dylan-FED/" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Bekijk website</a></p>
+            <p><a href="https://github.com/DylanAbrahams/Dylan-FED" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+            <p><span>Eigen reflectie:</span> Ik vond dit een leuk project om te doen. Het was heel erg leerzaam en ik
+              kan na dit vak gedaan te hebben een stuk beter overweg met HTML, CSS en JS. Een punt voor verbetering is
+              wel de responsiviteit. Achteraf had ik meer media queries erin gezet om meer verschillende
+              schermgroottes
+              goed te laten werken met de letter- en afbeeldinggroottes. Verder had ik een website kunnen kiezen waar
+              iets
+              meer animaties en transities in zaten voor meer uitdaging.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div id="project4">
+      <div class="portfolio-container">
+        <div class="row">
+          <div class="title-area">
+            <h2 class="sub-title">Pantheon</h2>
+            <h3>Details:</h3>
+            <ul>
+              <li><span>Toegepaste skills:</span> HTML, JavaScript, MongoDB</li>
+              <li><span>Datum:</span> 5 februari 2024</li>
+              <li><span>Duur:</span> 10 weken</li>
+              <li><span>Uitvoering:</span> Team van 5</li>
+            </ul>
+          </div>
+          <div class="portfolio-col">
+            <h3>De opdracht</h3>
+            <p>De opdracht was om een matching site te maken die mensen met een zelf bedacht onderwerp zou moeten
+              matchen. Wij hebben ervoor gekozen om een site te maken die mensen zouden matchen met een museum
+              waar ze naar toe zouden willen gaan op basis van de kunst die de gebruiker leuk vind. Deze site moet live
+              kunnen gaan en verbinding kunnen maken met een database waarin alle gegevens opgeslagen kunnen worden.</p>
+            <h3>Taakverdeling</h3>
+            <p>In deze opdracht werkte ik samen met 4 teamgenoten: Liam van Bart, Sybren Loos, Ruben Beck & Sem van
+              Wijk. Ons team werd verdeeld in 3 back-end developers en 2 front-end developers.</p>
+            <p><span>Dylan (ikzelf) - Back-end Developer:</span> Ik was zelf verantwoordelijk voor het filtersysteem,
+              het matchsysteem, het sorteersysteem en het kunnen opslaan van de antwoorden van de gebruikers.</p>
+            <p><span>Liam - Back-end Developer:</span> Liam was veantwoordelijk voor het koppelen van opgeslagen data
+              met een profiel. Alles wat te maken heeft met het bewerken van je accountgegevens heeft hij geprogrammerd.
+            </p>
+            <p><span>Sybren - Back-end Developer:</span> Sybren was verantwoordelijk voor het inlogsysteem. Hij heeft
+              ervoor gezorgd dat een gebruiker een account kan aanmaken, deze wordt opgeslagen in de database, en de
+              gebruiker vervolgens kan inloggen.</p>
+            <p><span>Ruben & Sem - Front-end Developers:</span> Ruben & Sem waren de 2 front-enders. Dit betekent dat
+              zij
+              verantwoordelijk zijn voor de layout, de vormgeving en gedeeltelijk de inhoud. Samen hebben zij de hele
+              app
+              met Adobe XD geschetst en deze met HTML en CSS na te maken.</p>
+            <p><span>Samen:</span> We hebben met z'n allen samen het concept van de app bedacht. Verder was iedereen
+              verantwoordelijk voor hun eigen code, maar ook voor elkaars code. Als iemand wijzigingen had gemaakt aan
+              de code, zouden er altijd mensen moeten zijn om deze te checken voordat we onze volledige applicatie
+              zouden updaten.</p>
+            <h3>De uitvoering</h3>
+            <p><span>Website:</span> De website is gemaakt voor mobiel en bis ingedeeld in 4 pagina's: De homepagina, de
+              likespagina, de museumpagina en de accountpagina. Verder zijn er nog een paar pagina's voor het
+              inlogsysteem.
+              <div class="img-list enemy">
+                <div class="image-container">
+                  <img src="img/PantheonHome1.png" alt="Homepagina">
+                  <p>Homepagina</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonLikes5.png" alt="Likespagina">
+                  <p>Likespagina</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonMusea1.png" alt="Museumpagina">
+                  <p>Museumpagina</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonLogin2.png" alt="Accountpagina">
+                  <p>Accountpagina</p>
+                </div>
+              </div>
+              <p><span>Setup:</span> Om deze website te runnen hebben we een aantal packages gebruikt, waaronder:</p>
+              <ul class="packages">
+                <li>Node.js - Zorgt ervoor dat we server side websties kunnen bouwen</li>
+                <li>Nodemon - Zorgt ervoor dat we live veranderingen kunnen maken aan de website</li>
+                <li>"bcrypt": "^5.1.1" - Zorgt ervoor dat we de wachtwoorden van gebruikers kunnen hashen</li>
+                <li>"dotenv": "^16.4.5" - Haalt gegevens op uit het verborgen .env bestand</li>
+                <li>"ejs": "^3.1.9" - Zorgt ervoor dat je met JavaScript HTML kan genereren</li>
+                <li>"express": "^4.18.3" - Zorgt voor eenvoudige routes tussen de webpagina's end de server</li>
+                <li>"express-session": "^1.18.0" - Beheert de gebruikerssessies, waardoor de inlogstatus kan worden
+                  opgeslagen</li>
+                <li>"express-validator": "^7.0.1" - Helpt met het valideren van de informatie van de gebruiker</li>
+                <li>"mongodb": "^6.4.0" - Zorgt voor de verbinding met de database van MongoDB</li>
+                <li>"multer": "^1.4.5-lts.1" - Zorgt voor het kunnen opslaan van afbeeldingen</li>
+                <li>"xss": "^1.0.15" - Bescherming tegen XSS aanvallen</li>
+              </ul>
+              <p>
+                Verder hebben we natuurlijk een databse nodig. We gebruiker hiervoor MongoDB. Alle data die de gebruiker
+                invult op de website wordt hierop opgeslagen. Onze database bestaat uit 2 collecties: Login & Musea. De
+                login bevat alle gebruikers en hun login informatie, waaronder de gebruikersnaam, email, telefoonnummer
+                en wachtwoord (gehasht). De musea collectie bevat alle data alle musea, waaronder de naam, de afstand,
+                de locatie en de bijhorende afbeelding. Verder staat er bij elk museum een aantal kunstwerken. Deze
+                hebben de data voor de naam, artiest, jaartal, afbeelding en het meest belangrijke, de beoordeling van
+                de gebruiker. Deze beoordeling is een nummer dat live wordt aangepast wanneer de gebruiker een
+                beoordeling geeft aan een kunstwerk. </p>
+              <div class="img-list story">
+                <div class="image-container">
+                  <img src="img/PantheonMongoDB1.png" alt="MongoDB Login">
+                  <p>MongoDB database van de accounts</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonMongoDB2.png" alt="MongoDB Musea">
+                  <p>MongoDB database van de musea</p>
+                </div>
+              </div>
+
+              <p><span>Matchsysteem:</span> De hoofdfunctie van de website is om de gebruiker te koppelen aan een museum
+                met de kunst die hij/zij het mooist vind. Op de homepagina geef je per kunstwerk een beoordeling. Je
+                krijgt een willekeurig kunstwerk van een willekeurig museum te zien en kan deze een beoordeling geven
+                van 1 tot 5 dmv smileys. Dit kun je blijven doen zolang als je wil. Op de 2e pagina, de likes page, zie
+                elk kunstwerk dat je hebt beoordeeld en welke beoordeling je deze hebt gegeven. Op de 3e pagina, de
+                museumpagina, zie je de musea. Bovenaan staat het museum waarvan de kunst het beste is beoordeeld. Deze
+                zou dan de go-to museum voor jou zijn.
+              </p>
+              <div class="img-list enemy">
+                <div class="image-container">
+                  <img src="img/PantheonHome2.png" alt="Beoordeeld kunstwerk">
+                  <p>Kunstwerk goed beoordeeld (groen)</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonHome3.png" alt="Beoordeeld kunstwerk">
+                  <p>Kunstwerk slecht beoordeeld (oranje)</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonLikes5.png" alt="Likespagina">
+                  <p>Alle beoordeelde kunstwerken van beste naar slechtste</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonMusea1.png" alt="Museumpagina">
+                  <p>Alle musea beoordeeld van beste naar slechtse</p>
+                </div>
+              </div>
+
+              <p><span>Filter- en sorteersysteem:</span> Op de likes- en museapagina's zijn alle kunstwerken/musea
+                automatisch gesorteerd op beoordeling (van best beoordeeld naar slechtst). Op deze pagina's is er een
+                sorteerknop waarop je kunt sorteren op naam, museum, artiest, locatie, afstand etc. </p>
+              <div class="img-list enemy">
+                <div class="image-container">
+                  <img src="img/PantheonLikes3.png" alt="Likespagina sorteerfunctie">
+                  <p>Likespagina Sorteerfunctie</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonLikes4.png" alt="Likespagina gesorteerd">
+                  <p>Likespagina gesorteerd op naam</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonMusea4.png" alt="Museumpagina sorteerfunctie">
+                  <p>Museumpagina sorteerfunctie</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonMusea5.png" alt="Museumpagina gesorteerd">
+                  <p>Museumpagina gesorteerd op locatie</p>
+                </div>
+              </div>
+              <p>Verder is er een zoekbalk die zal filteren op naam, museum, artiest en locatie.</p>
+              <div class="img-list enemy">
+                <div class="image-container">
+                  <img src="img/PantheonLikes2.png" alt="Likespagina gefilterd">
+                  <p>Likespagina gefilterd op Nachtwacht</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonLikes1.png" alt="Likespagina gefilterd">
+                  <p>Likespagina gefilterd op Van Gogh Museum</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonMusea2.png" alt="Museumpagina gefilterd">
+                  <p>Museumpagina gefilterd op Amsterdam</p>
+                </div>
+              </div>
+
+              <p><span>In- en uitloggen:</span> Om gebruik te maken van deze website moet je eerst een account maken en
+                inloggen. Voor een account geef je een gebruikersnaam, een wachtwoord, een email en een telefoonnummer.
+                Deze gegevens worden dan opgeslagen in de database. Als je bent ingelogd kun je via de accountpagina je
+                gegevens aanpassen en ook uitloggen.</p>
+              <div class="img-list enemy">
+                <div class="image-container">
+                  <img src="img/PantheonLogin1.png" alt="Loginscherm">
+                  <p>Loginscherm</p>
+                </div>
+                <div class="image-container">
+                  <img src="img/PantheonLogin2.png" alt="Accountpagina">
+                  <p>Accountpagina</p>
+                </div>
+              </div>
+
+              <p><span>Eigen Reflectie:</span> Ik vond dit een geweldig project om te doen. Ik heb veel nieuwe dingen
+                geleerd over code en websites. Verder vind ik dat ik met mijn team een mooi resultaat heb gemaakt met
+                deze website/app. Helaas hebben we niet alles wat we wilde af kunnen maken. We hebben geen live locatie
+                van de gebruiker, wat betekent dat de afstanden van de musea niet kloppen en we hadden per kunstwerk
+                maar 1 museum ondanks sommige kunstwerken in meerdere musea te zien zijn. </p>
+
+              <p>Omdat deze website vanaf je eigen terminal runt, staat deze helaas niet online op github. Om deze te
+                runnen op je eigen desktop moet je de files van github downloaden. Deze bevat niet alles wat je nodig
+                hebt, voor de overige spullen zul je contact op moeten nemen met 1 van de ons. Als je alles hebt
+                gedownloadt kun je in de terminal <em>npm install</em> doen voor de packages en daarna <em>npm run
+                  dev</em> om de website online te zetten.</p>
+              <p><a href="https://github.com/Liamvanbart1/team1" class="btn btn3"><i
+                    class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -34,6 +34,10 @@ ul {
   margin: 0;
 }
 
+em{
+  font-style: italic;
+}
+
 #header {
   width: 100%;
   height: 100vh;
@@ -112,7 +116,7 @@ nav ul li a:hover::after {
 
 /* --------------about------------ */
 #about{
-  padding: 80px 0;
+  padding:  0;
   color: var(--about-text-color);
 }
 
@@ -303,6 +307,9 @@ nav ul li a:hover::after {
 }
 
 /* ------------contact-------------- */
+#contact{
+  padding: 30px 0;
+}
 .contact-left{
   flex-basis: 35%;
 }
@@ -363,6 +370,101 @@ form .btn2{
   background: var(--tab-background);
   font-weight: 300;
   margin-top: 20px;
+}
+
+/* ------------------portfolio pagina-------------- */
+.portfolio-container {
+  padding: 50px 15%;
+  top: 0;
+  z-index: 999; 
+}
+.title-area{
+  width:100%;
+}
+.title-area h2{
+  margin: 10px;
+}
+.title-area img{
+  width: 80%;
+  margin-top: 20px;
+}
+.title-area span, .portfolio-col span{
+  color:var(--about-tabs);
+  font-weight: 550;
+}
+.portfolio-col .content{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-direction: row;
+}
+.title-area h3, .portfolio-col h3{
+  font-size: 20px;
+}
+.portfolio-col p{
+  width:80%;
+}
+.portfolio-col .content img {
+  height: auto; 
+}
+.portfolio-col .content p{
+  width:55%;
+}
+.image-container{
+  width:30%;
+  text-align:center;
+  margin: 0;
+}
+.image-container img{
+  width:100%;
+  height:auto;
+}
+.portfolio-col .image-container p{
+  width:100%;
+  margin: 10px;
+  color:var(--about-text-color)
+}
+.img-list{
+  display:flex;
+  justify-content:flex-start;
+}
+.img-list .image-container img{
+  width:70%;
+}
+.img-list.enemy .image-container img{
+  width:50%;
+}
+.img-list.enemy .desktop{
+  width:57.5%;
+}
+.img-list.enemy .desktop img{
+  width:100%;
+}
+.img-list.story .image-container img{
+  width:120%;
+}
+.img-list.story{
+  gap:80px;
+}
+.btn3 {
+  display:inline-block;
+  margin: 10px;
+}
+.image-container.big-img{
+  width:70%;
+}
+.portfolio-col a{
+  color:var(--text-color)
+}
+.content .desktop{
+  width:40%;
+}
+.packages{
+  list-style:circle;
+  margin-left:50px;
+}
+.packages li{
+  margin-top:8px;
 }
 
 /* -------------css for small screens-------- */
@@ -428,6 +530,50 @@ nav .fas{
     .copyright{
       font-size:14px;
     }
+    .img-list{
+      flex-direction:column;
+    }
+    .title-area img{
+      width:100%;
+    }
+    .portfolio-col p{
+      width:100%;
+    }
+    .portfolio-col .content{
+      flex-direction:column;
+    }
+    .portfolio-col .content p{
+      width:100%;
+    }
+    .content img{
+      width:100%;
+    }
+    .image-container {
+      width:100%;
+      align-self: center;
+    }
+    .img-list.enemy .image-container img{
+      width:80%;
+    }
+    .img-list.story .image-container img{
+      width:100%;
+    }
+    .image-container.big-img{
+      width:100%;
+    }
+    .img-list.enemy .desktop{
+      width:100%;
+    }
+    .content .desktop{
+      width:100%;
+    }
+    .img-list.story{
+      gap:0;
+    }
+    .packages{
+      list-style:circle;
+      margin-left:20px;
+    }
 }
 #msg{
   color: var(--msg-success);
@@ -435,66 +581,6 @@ nav .fas{
   display:block;
 }
 
-/* ------------------portfolio pagina-------------- */
-.portfolio-container {
-  padding: 10px 15%;
-  top: 0;
-  z-index: 999; 
-}
-.title-area{
-  width:100%;
-}
-.title-area h2{
-  margin: 10px;
-}
-.title-area img{
-  width: 800px;
-  margin-top: 20px;
-}
-.title-area span, .portfolio-col span{
-  color:var(--about-tabs);
-  font-weight: 550;
-}
-.portfolio-col .content{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-}
-.title-area h3, .portfolio-col h3{
-  font-size: 20px;
-}
-.portfolio-col p{
-  width:80%;
-}
-.portfolio-col .content img {
-  height: auto; 
-}
-.portfolio-col .content p{
-  width:55%;
-}
-.image-container{
-  width:30%;
-  text-align:center;
-  margin: 0;
-}
-.image-container img{
-  width:100%;
-  height:auto;
-}
-.portfolio-col .image-container p{
-  width:100%;
-  margin: 10px;
-  color:var(--about-text-color)
-}
-.img-list{
-  display:flex;
-  justify-content:flex-start;
-}
-.img-list .image-container img{
-  width:50%;
-}
-.btn3 {
-  display:inline-block;
-  margin: 10px;
-}
+
+
 
