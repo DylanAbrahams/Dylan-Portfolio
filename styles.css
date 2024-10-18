@@ -269,6 +269,9 @@ nav ul li a:hover::after {
   font-size: 14px;
   transition: height 0.5s;
 }
+.layer p{
+  margin:0 10px;
+}
 .layer h3{
   font-weight: 500;
   margin-bottom: 20px;
@@ -462,6 +465,7 @@ form .btn2{
 .packages{
   list-style:circle;
   margin-left:50px;
+  margin-bottom:16px;
 }
 .packages li{
   margin-top:8px;
