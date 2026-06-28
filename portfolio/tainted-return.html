@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Abrahams - Portfolio</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/56e1a6ce74.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="header-short">
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="../img/DylanLogo.png" class="logo"></a>
+        <ul id="sidemenu">
+          <li><a href="#project">Tainted Return</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <div id="project">
+    <div class="portfolio-container">
+      <div class="row">
+        <div class="title-area">
+          <h2 class="sub-title">Tainted Return</h2>
+          <h3>Details:</h3>
+          <ul>
+            <li><span>Toegepaste skills:</span> HTML, CSS, JavaScript, Adobe XD, Adobe Illustrator</li>
+            <li><span>Datum:</span> 12 juni 2023</li>
+            <li><span>Duur:</span> 3 weken</li>
+            <li><span>Uitvoering:</span> Team van 4</li>
+          </ul>
+          <img src="../img/TaintedReturn1.png" alt="Tainted Return Beginscherm">
+        </div>
+        <div class="portfolio-col">
+          <h3>De opdracht</h3>
+          <p>Dit project was het Passieproject waar je een product kon
+            maken naar eigen voorkeur. Ik heb ervoor gekozen om
+            verder te gaan met sidescrollers in JavaScript. De bedoeling van het project was om de wereld iets beter te
+            maken met behulp van je project. Denk aan mensen activeren/informeren over milieu, inclusiviteit, armoede
+            etc. Wij hebben gekozen voor milieu en plastic.
+          </p>
+          <h3>Taakverdeling</h3>
+          <p>In deze opdracht werkte ik samen met 3 medestudenten: Elton Irokromo, Melvin Vermast & Eva Vrieze. Ons team
+            bestond uit 2 programmeurs en 2 ontwerpers.</p>
+          <p><span>Dylan (ikzelf) - Programmeur</span>: Ik was 1 van de 2 programmeurs, Melvin en ik waren dus samen
+            verantwoordelijk voor alle code in ons project. Ik heb de speler geprogrammeerd, deze heb ik kunnen laten
+            springen, lopen, aanvallen etc. Verder heb ik de vijanden geprogrammeerd, die de speler kunnen aanvallen. Ik
+            heb de animaties in het spel gezet dmv spritesheets en ik heb het einde van het spel geprogrammeerd.</p>
+          <p><span>Melvin - Programmeur</span>: Melvin was verantwoordelijk voor het programmeren van het beginscherm,
+            de textboxes, de muziek, de SFX, de life/mana bar, de potions en de spiked plants. Verder had hij veel
+            meegeholpen met
+            het programmeren van de enemies. Ook had hij een paar assets gemaakt waaronder de potions, de spiked plants,
+            de bricks en de gears.</p>
+          <p><span>Eva - Ontwerper</span>: Eva was onze main artist. Zij was verantwoordelijk voor het ontwerp van de
+            map
+            waarin het spel afspeelt, de speler, de vijanden, voor- en achtergrond etc. Deze heeft ze gemaakt in Adobe
+            Illustrator.</p>
+          <p><span>Elton - Ontwerper</span>: Elton kwam pas halverwege het project in ons team, we waren eerst een team
+            van 3. Hij was verantwoordelijk voor het ontwerp van het beginscherm en de cutscenes. Verder was hij veel
+            bezig met de opdrachten buiten het product om, waaronder 3D-versies van de figuren in het spel in Blender.
+          </p>
+          <p><span>Samen</span>: We hebben met z'n alle het concept van het spel bedacht met het verhaal en boodschap
+            erachter. Ditzelfde geldt voor alle dialoog dat in het spel te zien is. Verder hebben Melvin & ik samen de
+            level design gedaan.</p>
+
+          <h3>Uitvoering</h3>
+          <ul>
+            <p>
+              <span>Verhaal:</span> Het verhaalt speelt af op aarde in 2258. De hele wereld is vernietigd. Alles is
+              verlaten en er zijn gemuteerde vijanden gebaseerd op plastic. Onze hoofdpersonage is een astronaut die al
+              een lange tijd weg is geweest van aarde. Nu dat iedereen op aarde is gestorven heeft hij de opdracht
+              gekregen om onderzoek te doen naar de planeet. Tijdens het spel komt er ook dialoog in beeld als de speler
+              bepaalde items gevonden heeft.
+            </p>
+            <div class="img-list story">
+              <div class="image-container">
+                <img src="../img/TaintedReturnStory.png" alt="Cutscene">
+                <p>De astronaut heeft de taak om de aarde te onderzoeken</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnStory2.png" alt="Dialoog">
+                <p>De astronaut is geland op aarde</p>
+              </div>
+            </div>
+            <p>
+              <span>De speler:</span> Onze astronaut, in ons verhaal wordt hij 'Leutenant' genoemd, wordt bestuurd met
+              WASD. A voor links lopen, D voor rechts lopen en W voor springen. Verder heeft hij een zwaard en kan hij
+              slaan met F. Linksbovenin is een health bar en een mana bar. De health bar gaat omlaag als de speler
+              geraakt wordt door een vijand. De mana bar wordt gebruikt door het zwaard. Als je mana hebt, dan schiet
+              het zwaard een projectiel. Er liggen potions rondom het level om health en mana te herstellen.
+            </p>
+            <div class="img-list">
+              <div class="image-container">
+                <img src="../img/TaintedReturnPlayer1.png" alt="Staat stil">
+                <p>Stilstaand</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnPlayer2.png" alt="Loopt naar rechts">
+                <p>Rennend</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnPlayer3.png" alt="Zwaardslag">
+                <p>Zwaardslag</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnPlayer4.png" alt="Zwaardslag + projectiel">
+                <p>Zwaardslag + Projectiel</p>
+              </div>
+            </div>
+            <p>
+              <span>De vijanden:</span> Er zijn 2 vijanden. Deze zijn allebei gebaseerd op het plastic probleem. De
+              eerste is een
+              gemuteerde rat 2 hoofden gebaseerd op plastic afval. Deze is geprogrameerd om naar links en rechts te
+              lopen. Als de speler in contact komt met de rat neemt hij 20% schade. Als 2e enemy hebben we de plastic
+              soep.
+              Deze kan projectielen schieten die 50% schade doen naar de speler. Verder is de wereld gevuld met spike
+              planten die de speler afmaken als hij er tegenaan loopt.
+            </p>
+            <div class="img-list enemy">
+              <div class="image-container">
+                <img src="../img/TaintedReturnEnemy1.png" alt="Enemy 1">
+                <p>2-koppige rat in de vorm van een plastic fles.</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnEnemy2.png" alt="Enemy 2">
+                <p>Plastic soep</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnEnemy3.png" alt="Enemy 2 + Projectiel">
+                <p>Plastic soep + vork projectiel</p>
+              </div>
+            </div>
+            <p>
+              <span>Collectibles:</span> Er liggen tandwielen rondom het level. Er zijn in totaal 30 in het spel. Dit
+              geeft de speler een extra opdracht naast het halen van het einde. Zorg voor een zo goed mogelijke score.
+              Verder zijn er toverdrankjes te vinden rondom de map. Deze kunnen je leven/magie herstellen of zelfs
+              verhogen!
+            </p>
+            <div class="img-list">
+              <div class="image-container">
+                <img src="../img/TaintedReturnCollectible1.png" alt="5 Tandwielen">
+                <p>Tandwielen</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnCollectible2.png" alt="Rode potion">
+                <p>Rood - Herstelt leven</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnCollectible3.png" alt="Blauwe potion">
+                <p>Blauw - Herstelt magie</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnCollectible4.png" alt="Roze potion">
+                <p>Roze - Verhoogt leven</p>
+              </div>
+            </div>
+            <p>
+              <span>Animaties:</span> Er zijn animaties toegevoegd door middel van spritesheets. De speler heeft 3
+              verschillende
+              spritesheets: Stilstaan, rennen en zwaard gebruiken. Verder hebben de tandwielen een spin animatie, de
+              ratten hebben een loop animatie en de plastic soep heeft een schiet animatie.
+            </p>
+            <div class="image-container big-img">
+              <img src="../img/TaintedReturnSpritesheet.png" alt="Spritesheet van alle animaties">
+              <p>Alle spritesheets in het spel</p>
+            </div>
+            <p>
+              <span>Muziek en SFX: </span>Er is een dramatische achtergrond muziek toegevoegd om een sfeer te geven aan
+              het spel.
+              Verder zijn er sound effects voor de speler, het zwaard, de enemies, de collectibles en meer.
+            </p>
+            <p>
+              <span>Einde: </span>Aan het einde van het level komt er een silhouette van achter die op de speler
+              afloopt. Wanneer
+              de speler wordt geraakt komt er een eindscherm met de eindscores en een message van het spel.</p>
+            <div class="img-list ">
+              <div class="image-container">
+                <img src="../img/TaintedReturnEnding1.png" alt="Eind cutscene">
+                <p>Silhouette komt af op de speler</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/TaintedReturnEnding2.png" alt="Eindscherm">
+                <p>Eindscherm</p>
+              </div>
+            </div>
+            <p><a href="https://dylanabrahams.github.io/Dylan-TaintedReturn/" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Speel prototype</a></p>
+            <p><a href="https://github.com/DylanAbrahams/Dylan-TaintedReturn" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+            <p><span>Eigen reflectie: </span>Ik ben heel blij met het eindresultaat. Het spel is heel mooi geworden.
+              Vooral de
+              animaties en het zwaard zijn onderdelen waar ik zelf heel trots op ben. Wat wel beter had gekund is de
+              leveldesign. We hebben een mooi level gemaakt, maar je kon er niet makkelijk een platformer mee maken,
+              want er waren geen valkuilen. Daarom hebben we besloten om spike plants overal toe te voegen en
+              brick platforms erbij te doen. De spikeplants waren helaas een beetje gebugd: de hitbox was groter dan
+              het lijkt, waardoor de speler dood zou gaan zonder de plant echt aan te raken.</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

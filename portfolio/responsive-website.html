@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Abrahams - Portfolio</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/56e1a6ce74.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header-short">
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="../img/DylanLogo.png" class="logo"></a>
+        <ul id="sidemenu">
+          <li><a href="#project">Responsive Website</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <div id="project">
+    <div class="portfolio-container">
+      <div class="row">
+        <div class="title-area">
+          <h2 class="sub-title">Responsive Website</h2>
+          <h3>Details:</h3>
+          <ul>
+            <li><span>Toegepaste skills:</span> HTML, CSS, JavaScript<li><span>Datum:</span> 4 september 2023</li>
+            <li><span>Duur:</span> 5 weken</li>
+            <li><span>Uitvoering:</span> Individueel</li>
+          </ul>
+          <img src="../img/ResponsiveWebsiteHome2.png" alt="Mijn recreatie">
+        </div>
+        <div class="portfolio-col">
+          <h3>De opdracht:</h3>
+          <p>Voor dit project moesten we voor het vak Frontend Developement zelf een website uitkiezen en
+            deze met HTML, CSS en JavaScript na te maken. Ik heb zelf gekozen voor <a
+              href="https://rightourstory.com">rightourstory.com</a>. We moesten de website
+            responsive maken dmv media queries en we moesten 2 pagina's namaken. Ik heb de home pagina en de 'Bullied
+            Button' pagina nagemaakt.
+          </p>
+          <h3>De uitvoering:</h3>
+          <p><span>Homepagina:</span> Als eerste de homepagina. Ik heb alle kopjes tekst met flexbox op de juiste
+            locaties gezet. Verder heb ik de achtergronden gekopieerd van de originele website. Met JavaScript heb ik
+            ervoor gezorgd dat de achtergrondkleur van de header is niet zichtbaar totdat je naar beneden scrollt, net
+            als de originele website.</p>
+          <div class="img-list story">
+            <div class="image-container">
+              <img src="../img/ResponsiveWebsiteHome1.png" alt="Originele website">
+              <p>Originele website van rightourstory.com</p>
+            </div>
+            <div class="image-container">
+              <img src="../img/ResponsiveWebsiteHome2.png" alt="Mijn recreatie">
+              <p>Mijn recreatie</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Verder zijn er nog een paar interessante onderdelen van deze pagina, waaronder een scrollbare sectie. Dit
+              is een <em>article</em> binnen een <em>section</em>. De section bestaat uit de achtergrond, de link
+              onderin
+              en natuurlijk de article. Om ervoor te zorgen dat de tekst scrollbaar wordt, maak je in CSS de
+              <em>overflow-x</em> verborgen (<em>hidden</em>) en de <em>over-flow-y</em> op automatisch (<em>auto</em>),
+              verder maak je de article met <em>flexbox</em> verticaal door deze een <em>column</em> te maken en
+              <em>flex-wrap</em> op <em>nowrap</em> te zetten.</p>
+            <div class="image-container desktop">
+              <img src="../img/ResponsiveWebsiteHome3.png" alt="Scrollbare sectie">
+              <p>Scrollbare sectie</p>
+            </div>
+          </div>
+
+          <p><span>Responsive:</span> Ik heb de nav bar responsive gemaakt door deze op mobiel achter een hamburgermenu
+            te verstoppen. Als er op het hamburgermenu icoontje wordt gedrukt, dan komt de navigatie bar in beeld. Op
+            desktop is deze in de header te zien. Verder wordt de grootte van de tekst kleiner op mobiel.</p>
+          <div class="img-list enemy">
+            <div class="image-container">
+              <img src="../img/ResponsiveWebsiteNav1.png" alt="Navigatie met hamburgermenu">
+              <p>Om naar de navigatie te gaan, klik je op het hamburgermenu rechtsboven</p>
+            </div>
+            <div class="image-container">
+              <img src="../img/ResponsiveWebsiteNav2.png" alt="Navigatie geselecteerd">
+              <p>De navigatie op mobiel</p>
+            </div>
+          </div>
+          <p><span>Flexbox:</span> De website is ingedeeld met flexbox. Hiermee wordt bepaald of elementen naast of
+            onder elkaar komen te staan. Alles in de header staat bijvoorbeeld naast elkaar. Op mobiel staan alle
+            teksten en afbeeldingen onder elkaar. Op desktop is er meer plek, dus zijn er elementen naast elkaar. Dit
+            wordt bepaald met flexbox.</p>
+          <div class="img-list enemy">
+            <div class="image-container desktop">
+              <img src="../img/ResponsiveWebsiteFlexbox1.png" alt="Lijst op desktop">
+              <p>Lijst op desktop</p>
+            </div>
+            <div class="image-container">
+              <img src="../img/ResponsiveWebsiteFlexbox2.png" alt="Lijst op mobiel">
+              <p>Lijst op mobiel</p>
+            </div>
+          </div>
+          <p><span>2e pagina:</span> De bullied button pagina heeft een eigen CSS bestand. Hierin wordt een andere
+            achtergrond geladen worden alle CSS functies exclusief voor deze pagina opgeslagen. Deze pagina heeft ook
+            een kleine animatie op de bullied knop. Ik heb een knop toegevoegd om deze animatie aan en uit te zetten.
+            Verder heb ik op deze pagina veel flex-box gebruikt voor alle lijsten en korte stukken tekst.
+          </p>
+          <div class="img-list story">
+            <div class="image-container">
+              <img src="../img/ResponsiveWebsiteBullied1.png" alt="Bullied Button">
+              <p>Animatie knop</p>
+            </div>
+            <div class="image-container">
+              <img src="../img/ResponsiveWebsiteBullied2.png" alt="Bullied Button">
+              <p>Stukken tekst ingedeeld met flex-box</p>
+            </div>
+          </div>
+          <div>
+            <p><span>Toegankelijk:</span> Deze website is toegankelijk voor blinden/slechtzienden. Je kunt met tab
+              door
+              alle links heen gaan en alle tekst door de verteller laten spreken.
+            </p>
+            <p><span>Overige CSS:</span> Bij deze opdracht was het niet toegestaan om gebruik te maken van classes en
+              divs. Alle elementen zijn in CSS geselecteerd met 'sections' en 'nth-of-types'. Verder zijn er gebruik
+              gemaakt van custom properties en online fonts. Alle code is te zien op de github pagina.</p>
+            <p><a href="https://dylanabrahams.github.io/Dylan-FED/" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Bekijk website</a></p>
+            <p><a href="https://github.com/DylanAbrahams/Dylan-FED" class="btn btn3"><i
+                  class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+            <p><span>Eigen reflectie:</span> Ik vond dit een leuk project om te doen. Het was heel erg leerzaam en ik
+              kan na dit vak gedaan te hebben een stuk beter overweg met HTML, CSS en JS. Een punt voor verbetering is
+              wel de responsiviteit. Achteraf had ik meer media queries erin gezet om meer verschillende
+              schermgroottes
+              goed te laten werken met de letter- en afbeeldinggroottes. Verder had ik een website kunnen kiezen waar
+              iets
+              meer animaties en transities in zaten voor meer uitdaging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

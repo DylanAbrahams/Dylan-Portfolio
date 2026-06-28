@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Abrahams - Portfolio</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/56e1a6ce74.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header-short">
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="../img/DylanLogo.png" class="logo"></a>
+        <ul id="sidemenu">
+          <li><a href="#project">Pantheon</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+
+    <div id="project">
+        <div class="portfolio-container">
+        <div class="row">
+            <div class="title-area">
+            <h2 class="sub-title">Pantheon</h2>
+            <h3>Details:</h3>
+            <ul>
+                <li><span>Toegepaste skills:</span> HTML, JavaScript, Node.js, Nodemon</li>
+                <li><span>Datum:</span> 5 februari 2024</li>
+                <li><span>Duur:</span> 10 weken</li>
+                <li><span>Uitvoering:</span> Team van 5</li>
+            </ul>
+            </div>
+            <div class="portfolio-col">
+            <h3>De opdracht</h3>
+            <p>De opdracht was om een matching site te maken die mensen met een zelf bedacht onderwerp zou moeten
+                matchen. Wij hebben ervoor gekozen om een site te maken die mensen zouden matchen met een museum
+                waar ze naar toe zouden willen gaan op basis van de kunst die de gebruiker leuk vind. Deze site moet live
+                kunnen gaan en verbinding kunnen maken met een database waarin alle gegevens opgeslagen kunnen worden.</p>
+            <h3>Taakverdeling</h3>
+            <p>In deze opdracht werkte ik samen met 4 teamgenoten: Liam van Bart, Sybren Loos, Ruben Beck & Sem van
+                Wijk. Ons team werd verdeeld in 3 back-end developers en 2 front-end developers.</p>
+            <p><span>Dylan (ikzelf) - Back-end Developer:</span> Ik was zelf verantwoordelijk voor het filtersysteem,
+                het matchsysteem, het sorteersysteem en het kunnen opslaan van de antwoorden van de gebruikers.</p>
+            <p><span>Liam - Back-end Developer:</span> Liam was veantwoordelijk voor het koppelen van opgeslagen data
+                met een profiel. Alles wat te maken heeft met het bewerken van je accountgegevens heeft hij geprogrammerd.
+            </p>
+            <p><span>Sybren - Back-end Developer:</span> Sybren was verantwoordelijk voor het inlogsysteem. Hij heeft
+                ervoor gezorgd dat een gebruiker een account kan aanmaken, deze wordt opgeslagen in de database, en de
+                gebruiker vervolgens kan inloggen.</p>
+            <p><span>Ruben & Sem - Front-end Developers:</span> Ruben & Sem waren de 2 front-enders. Dit betekent dat
+                zij
+                verantwoordelijk zijn voor de layout, de vormgeving en gedeeltelijk de inhoud. Samen hebben zij de hele
+                app
+                met Adobe XD geschetst en deze met HTML en CSS na te maken.</p>
+            <p><span>Samen:</span> We hebben met z'n allen samen het concept van de app bedacht. Verder was iedereen
+                verantwoordelijk voor hun eigen code, maar ook voor elkaars code. Als iemand wijzigingen had gemaakt aan
+                de code, zouden er altijd mensen moeten zijn om deze te checken voordat we onze volledige applicatie
+                zouden updaten.</p>
+            <h3>De uitvoering</h3>
+            <p><span>Website:</span> De website is gemaakt voor mobiel en bis ingedeeld in 4 pagina's: De homepagina, de
+                likespagina, de museumpagina en de accountpagina. Verder zijn er nog een paar pagina's voor het
+                inlogsysteem.
+                <div class="img-list enemy">
+                <div class="image-container">
+                    <img src="../img/PantheonHome1.png" alt="Homepagina">
+                    <p>Homepagina</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonLikes5.png" alt="Likespagina">
+                    <p>Likespagina</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonMusea1.png" alt="Museumpagina">
+                    <p>Museumpagina</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonLogin2.png" alt="Accountpagina">
+                    <p>Accountpagina</p>
+                </div>
+                </div>
+                <p><span>Setup:</span> Om deze website te runnen hebben we een aantal packages gebruikt, waaronder:</p>
+                <ul class="packages">
+                <li>Node.js - Zorgt ervoor dat we server side websties kunnen bouwen</li>
+                <li>Nodemon - Zorgt ervoor dat we live veranderingen kunnen maken aan de website</li>
+                <li>"bcrypt": "^5.1.1" - Zorgt ervoor dat we de wachtwoorden van gebruikers kunnen hashen</li>
+                <li>"dotenv": "^16.4.5" - Haalt gegevens op uit het verborgen .env bestand</li>
+                <li>"ejs": "^3.1.9" - Zorgt ervoor dat je met JavaScript HTML kan genereren</li>
+                <li>"express": "^4.18.3" - Zorgt voor eenvoudige routes tussen de webpagina's end de server</li>
+                <li>"express-session": "^1.18.0" - Beheert de gebruikerssessies, waardoor de inlogstatus kan worden
+                    opgeslagen</li>
+                <li>"express-validator": "^7.0.1" - Helpt met het valideren van de informatie van de gebruiker</li>
+                <li>"mongodb": "^6.4.0" - Zorgt voor de verbinding met de database van MongoDB</li>
+                <li>"multer": "^1.4.5-lts.1" - Zorgt voor het kunnen opslaan van afbeeldingen</li>
+                <li>"xss": "^1.0.15" - Bescherming tegen XSS aanvallen</li>
+                </ul>
+                <div class="img-list">
+                <div class="image-container">
+                    <img src="../img/PantheonCode.png" alt="Visual Studio Code Tabs">
+                    <p>Alle bestanden in de code</p>
+                </div>
+                </div>
+                <p>
+                Verder hebben we natuurlijk een databse nodig. We gebruiker hiervoor MongoDB. Alle data die de gebruiker
+                invult op de website wordt hierop opgeslagen. Onze database bestaat uit 2 collecties: Login & Musea. De
+                login bevat alle gebruikers en hun login informatie, waaronder de gebruikersnaam, email, telefoonnummer
+                en wachtwoord (gehasht). De musea collectie bevat alle data alle musea, waaronder de naam, de afstand,
+                de locatie en de bijhorende afbeelding. Verder staat er bij elk museum een aantal kunstwerken. Deze
+                hebben de data voor de naam, artiest, jaartal, afbeelding en het meest belangrijke, de beoordeling van
+                de gebruiker. Deze beoordeling is een nummer dat live wordt aangepast wanneer de gebruiker een
+                beoordeling geeft aan een kunstwerk. </p>
+                <div class="img-list story">
+                <div class="image-container">
+                    <img src="../img/PantheonMongoDB1.png" alt="MongoDB Login">
+                    <p>MongoDB database van de accounts</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonMongoDB2.png" alt="MongoDB Musea">
+                    <p>MongoDB database van de musea</p>
+                </div>
+                </div>
+
+                <p><span>Matchsysteem:</span> De hoofdfunctie van de website is om de gebruiker te koppelen aan een museum
+                met de kunst die hij/zij het mooist vind. Op de homepagina geef je per kunstwerk een beoordeling. Je
+                krijgt een willekeurig kunstwerk van een willekeurig museum te zien en kan deze een beoordeling geven
+                van 1 tot 5 dmv smileys. Dit kun je blijven doen zolang als je wil. Op de 2e pagina, de likes page, zie
+                elk kunstwerk dat je hebt beoordeeld en welke beoordeling je deze hebt gegeven. Op de 3e pagina, de
+                museumpagina, zie je de musea. Bovenaan staat het museum waarvan de kunst het beste is beoordeeld. Deze
+                zou dan de go-to museum voor jou zijn.
+                </p>
+                <div class="img-list enemy">
+                <div class="image-container">
+                    <img src="../img/PantheonHome2.png" alt="Beoordeeld kunstwerk">
+                    <p>Kunstwerk goed beoordeeld (groen)</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonHome3.png" alt="Beoordeeld kunstwerk">
+                    <p>Kunstwerk slecht beoordeeld (oranje)</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonLikes5.png" alt="Likespagina">
+                    <p>Alle beoordeelde kunstwerken van beste naar slechtste</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonMusea1.png" alt="Museumpagina">
+                    <p>Alle musea beoordeeld van beste naar slechtse</p>
+                </div>
+                </div>
+
+                <p><span>Filter- en sorteersysteem:</span> Op de likes- en museapagina's zijn alle kunstwerken/musea
+                automatisch gesorteerd op beoordeling (van best beoordeeld naar slechtst). Op deze pagina's is er een
+                sorteerknop waarop je kunt sorteren op naam, museum, artiest, locatie, afstand etc. </p>
+                <div class="img-list enemy">
+                <div class="image-container">
+                    <img src="../img/PantheonLikes3.png" alt="Likespagina sorteerfunctie">
+                    <p>Likespagina Sorteerfunctie</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonLikes4.png" alt="Likespagina gesorteerd">
+                    <p>Likespagina gesorteerd op naam</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonMusea4.png" alt="Museumpagina sorteerfunctie">
+                    <p>Museumpagina sorteerfunctie</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonMusea5.png" alt="Museumpagina gesorteerd">
+                    <p>Museumpagina gesorteerd op locatie</p>
+                </div>
+                </div>
+                <p>Verder is er een zoekbalk die zal filteren op naam, museum, artiest en locatie.</p>
+                <div class="img-list enemy">
+                <div class="image-container">
+                    <img src="../img/PantheonLikes2.png" alt="Likespagina gefilterd">
+                    <p>Likespagina gefilterd op Nachtwacht</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonLikes1.png" alt="Likespagina gefilterd">
+                    <p>Likespagina gefilterd op Van Gogh Museum</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonMusea2.png" alt="Museumpagina gefilterd">
+                    <p>Museumpagina gefilterd op Amsterdam</p>
+                </div>
+                </div>
+
+                <p><span>In- en uitloggen:</span> Om gebruik te maken van deze website moet je eerst een account maken en
+                inloggen. Voor een account geef je een gebruikersnaam, een wachtwoord, een email en een telefoonnummer.
+                Deze gegevens worden dan opgeslagen in de database. Als je bent ingelogd kun je via de accountpagina je
+                gegevens aanpassen en ook uitloggen.</p>
+                <div class="img-list enemy">
+                <div class="image-container">
+                    <img src="../img/PantheonLogin1.png" alt="Loginscherm">
+                    <p>Loginscherm</p>
+                </div>
+                <div class="image-container">
+                    <img src="../img/PantheonLogin2.png" alt="Accountpagina">
+                    <p>Accountpagina</p>
+                </div>
+                </div>
+
+                <p><span>Eigen Reflectie:</span> Ik vond dit een geweldig project om te doen. Ik heb veel nieuwe dingen
+                geleerd over code en websites. Verder vind ik dat ik met mijn team een mooi resultaat heb gemaakt met
+                deze website/app. Helaas hebben we niet alles wat we wilde af kunnen maken. We hebben geen live locatie
+                van de gebruiker, wat betekent dat de afstanden van de musea niet kloppen en we hadden per kunstwerk
+                maar 1 museum ondanks sommige kunstwerken in meerdere musea te zien zijn. </p>
+
+                <p>Omdat deze website vanaf je eigen terminal runt, staat deze helaas niet online op github. Om deze te
+                runnen op je eigen desktop moet je de files van github downloaden. Deze bevat niet alles wat je nodig
+                hebt, voor de overige spullen zul je contact op moeten nemen met 1 van de ons. Als je alles hebt
+                gedownloadt kun je in de terminal <em>npm install</em> doen voor de packages en daarna <em>npm run
+                    dev</em> om de website online te zetten.</p>
+                <p><a href="https://github.com/Liamvanbart1/team1" class="btn btn3"><i
+                    class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

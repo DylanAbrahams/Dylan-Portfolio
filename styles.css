@@ -1,8 +1,7 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
+html {
 	--active-color: #008609;
   --about-text-color: #ababab;
   --background-color: #080808;
@@ -13,14 +12,17 @@
   --msg-success:#61b752;
 }
 
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* Basisstijlen voor alle schermgroottes */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: var(--background-color); 
   color: var(--text-color); 
 }
@@ -56,8 +58,6 @@ em{
 
 .container {
   padding: 10px 10%;
-  top: 0;
-  z-index: 999; 
 }
 
 nav {
@@ -124,6 +124,7 @@ nav ul li a:hover::after {
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap:1em;
 }
 
 .about-col-1 {

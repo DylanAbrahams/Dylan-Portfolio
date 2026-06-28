@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mario Sidescroller</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/56e1a6ce74.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="header-short">
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="../img/DylanLogo.png" class="logo"></a>
+        <ul id="sidemenu">
+          <li><a href="#project">Mario Sidescroller</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <!-- -------------project 1----------- -->
+  <div id="project">
+    <div class="portfolio-container">
+      <div class="row">
+        <div class="title-area">
+          <h2 class="sub-title">Mario Sidescroller</h2>
+          <h3>Details:</h3>
+          <ul>
+            <li><span>Toegepaste skills: </span>JavaScript, HTML, CSS, Adobe XD</li>
+            <li><span>Datum: </span>23 april 2023</li>
+            <li><span>Duur: </span>5 weken</li>
+            <li><span>Uitvoering: </span>Individueel</li>
+          </ul>
+          <img src="../img/MarioGame2.png" alt="Mario Sidescroller Game Screenshot">
+        </div>
+        <div class="portfolio-col">
+          <h3>De opdracht</h3>
+          <p>De opdracht was om een interactief spel te maken door gebruik te maken van HTML, CSS en JavaScript.
+            Dit is de eerste keer in de opleiding dat we gebruik maken van JavaScript. Voordat we zijn begonnen
+            moesten we een idee of spel uitkiezen die we (na)wilden maken en ik heb gekozen voor een sidescroller
+            (Mario Bros). In het spel is het de bedoeling om van punt A naar punt B te komen met allemaal obstakels
+            die je moet doorstaan, waaronder vijanden en valkuilen.</p>
+          <h3>De uitvoering</h3>
+          <div class="content">
+            <p> Ik heb in de HTML een canvas neergezet en met CSS deze in het midden gezet en een achtergrond gegeven.
+              Alle overige code is JavaScript. Alle assets zijn png's die ik gemaakt heb met Adobe XD. Deze zijn
+              allemaal gebaseerd op de sprites uit Super Mario Bros. Voor alle assets heb ik een JavaScript in een
+              variabele aangemaakt. Elk variabel zit een class. In de class zitten gegevens van de assets en deze
+              worden opgeroepen door de draw() functie of de update() functie. De update() functie is voor variabelen
+              die blijven bewegen op het scherm (bv. de vijanden). Deze functies worden opgeroepen met de animate()
+              functie onderin de code. Hieronder een beschrijving van alle variablen in de code. </p>
+            <div class="image-container">
+              <img src="../img/Mario_Assets.png" alt="Mario Sidescroller Assets">
+              <p>Alle assets gemaakt in Adobe XD</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="image-container">
+              <img src="../img/MarioGame4.png" alt="Mario Close Up">
+              <p>Je kunt Mario besturen met WASD</p>
+            </div>
+            <p><span>Om te beginnen, de speler:</span> Ik heb de speler (Mario) geprogrammeerd om altijd beinvloed te
+              worden
+              door zwaartekracht. Als de speler in de lucht is, valt hij naar beneden totdat hij/zij op een platform
+              terecht komt. Mario kan worden bestuurd met WASD, A voor links, D voor rechts en W voor springen. Als
+              de speler voorbij een bepaalde x-waarde is dan scrollt het scherm mee. Alle andere assets gaan dan
+              naar links waardoor het lijkt dat de speler naar rechts loopt. Als Mario in een valkuil valt of
+              geraakt wordt door een vijand dan wordt het spel gereset. Wat nog meer uniek is aan de speler is dat
+              hij 2 sprites heeft: Naar links kijken en naar rechts kijken. Dit wordt ook bepaald met de knoppen A
+              en D.</p>
+          </div>
+          <p><span>De vijanden:</span> Ik heb 3 verschillende vijanden gemaakt. De goomba, de bullet bill en de pirahna
+            plant.
+            De goomba en de bullet bill zijn op dezelde manier geprogrammeerd. Ze verplaatsen altijd naar links, als
+            ze de speler van links of rechts aanraken dan reset het spel en wanneer de speler bovenop hun springt
+            dan verdwijnen ze en krijgt de speler een boost naar boven. De pirahna plant is geprogrammeerd om steeds
+            naar boven en naar beneden te gaan. Als de plant boven een bepaalde hoogte is gaat hij naar beneden en
+            andersom. Als de speler in contact komt met de plant dan reset het spel.</p>
+          <div class="img-list enemy">
+            <div class="image-container">
+              <img src="../img/MarioEnemy1.png" alt="Goomba">
+              <p>Goomba - Loopt altijd naar links</p>
+            </div>
+            <div class="image-container">
+              <img src="../img/MarioEnemy2.png" alt="Bullet Bill">
+              <p>Bullet Bill - Vliegt altijd naar links</p>
+            </div>
+            <div class="image-container">
+              <img src="../img/MarioEnemy3.png" alt="Piranha Plant">
+              <p>Piranha Plant - Gaat op en neer</p>
+            </div>
+          </div>
+          <p><span>De platforms:</span> Alle platforms zijn geprogrameerd om de speler tegen te houden als hij/zij er
+            bovenop springt. Als de speler op een platform landt dan wordt de Y-velocity op 0 gezet. Bijna alle
+            platforms zijn hetzelfde met het enige verschil de grootte. Het enige uitzondering is de "Moving Platform"
+            die naar links en rechts beweegt.</p>
+          <div class="content img-list">
+            <p><span>Voor- en achtergrond:</span> De achtergrond scrollt langzamer mee dan de voorgrond. Dat is te zien
+              aan de wolken. Dit geeft een diepte gevoel aan het spel. De voorgrond zijn de assets die voor de speler
+              komen te staan. Deze worden als laatste in de animate() functie geladen, waaronder het kasteel, en de warp
+              pipes van level 2.
+              <div class="image-container">
+                <img src="../img/MarioAchtergrond1.png" alt="Achtergrond 1">
+                <p>Achtergrond links</p>
+              </div>
+              <div class="image-container">
+                <img src="../img/MarioAchtergrond2.png" alt="Achtergrond 2">
+                <p>Achtergrond rechts</p>
+              </div>
+          </div>
+          </p>
+          <p><a href="https://dylanabrahams.github.io/Dylan-MarioSidescroller/" class="btn btn3"><i
+                class="fa-solid fa-up-right-from-square"></i> Speel prototype</a></p>
+          <p><a href="https://github.com/DylanAbrahams/Dylan-MarioSidescroller" class="btn btn3"><i
+                class="fa-solid fa-up-right-from-square"></i> Github Pagina</a></p>
+          <p> Voor dit project ben ik genomineerd voor de <span>Golden Dot Awards 2023</span>. Elk schooljaar wordt
+            het beste studentenwerk gevonden door de leraren genomineerd voor de Golden Dot Awards. Voor dit project
+            was mijn docent onder de indruk en heeft hij mij genomineerd. Meer informatie in de link hieronder.</p>
+          <div class="image-container big-img">
+            <img src="../img/MarioGoldenDot.png" alt="Golden Dot Website">
+            <p>Golden Dot Award Nominatie</p>
+          </div>
+          <a href="https://cmd-amsterdam.nl/portfolio/mario-sidescroller-game/" class="btn btn3"><i
+              class="fa-solid fa-up-right-from-square"></i> Golden Dot Awards</a>
+          <p> <span>Eigen reflectie:</span> Ik ben trots op wat ik heb gemaakt in zo'n korte tijd. Ik had hiervoor nog
+            nooit
+            JavaScript
+            gebruikt, maar had wel snel de smaak te pakken. Achteraf had ik zeker nog nieuwe
+            dingen toe kunnen voegen en bepaalde bugs eruit kunnen halen. De goombas worden niet beinvloed door
+            zwaartekracht omdat ze anders door de platforms heen zouden vallen. Er is geen checkpoint systeem. Het
+            2e level heeft niet echt een einde. Dit zijn dingen die achteraf wel op te lossen waren. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
